@@ -1,7 +1,7 @@
 # CSS Architecture
 
 ## Principles:
-* patterns
+* create patterns
 * decoupling
 * single responsibility
 * separation of concerns
