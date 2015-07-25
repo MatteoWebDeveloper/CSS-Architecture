@@ -34,7 +34,7 @@
 * flat selector { provide solid architecture and even better performance }
 * classes should only concern within their element and they __should not interfere with the parent element__ { that's why box-sizing: border-box is great }
 * classes should include __state classes__ private and public __variables__ and __medias__ definition { tablet, desktop, print }
-* use _@extend_
+* use __@extend__ and __silent classes__
 * code should be self documented
 * order css rules alphebetically { minor improvment }
 * create a single page example { showing every components, create awareness of your styles }
