@@ -12,20 +12,19 @@
 
 ---------------------------------------
 
-* vars.scss { global variables }
-* utils.scss ( not sure is a good idea ? )
+* theme.sass { contains only variables `$t-namevariable` }
 
 ---------------------------------------
 
 * base.scss { create base for your general element, no class allowed }
-* layout.scss { `.l-filename-block` }
-* modules.scss { `.m-filename-block` }
-* state.scss ( optional? ) { `.is-statename` }
+* layout.scss { load layouts dependencies }
+  * namelayout.scss { `.l-namelayout-BEM` and `.is-statename` }
+* modules.scss { load modules dependencies }
+  * namemodule.scss { `.m-namemodule-BEM` and `.is-statename` }
 
 ---------------------------------------
 
-* theme.sass ( optional )
-* shame.sass { all the code need to be refactor goes here, contain really specific code }
+* shame.sass { all the code that need to be refactor goes here, contain really specific code }
 
 ## Good Patterns
 * use preprocessor __Sass__ or __Less__
@@ -42,13 +41,14 @@
 * use gulp __sourcemap__, _autoprefix_ and _minify_
 
 ## Bad Patterns
+* separate state.scss
 * use id and multi classes
 * css specificity are evil, make your architecture fragile
 * mixin { create duplicate code, extend is better }
 
 ## Note:
-!At the time of writing I am not sure to create a file just for state.scss as I think is more scoped if defined inside a specific module.
 Good/bad pattern are applied to style concerns. You can use id, and state classes if used in javascript concern scenario.
+Comparing SMACSS I removed states.
 
 ## Resources:
 * [Organizing CSS with OOCSS, SMACSS, and BEM](https://www.youtube.com/watch?v=IKFq2cSbQ4Q) 
