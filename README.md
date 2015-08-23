@@ -29,15 +29,16 @@
 
 * shame.sass { when you start a new project write everything here and during the devolpment refactor the component are reusable. all the code that need to be refactor goes here. `.s-namecomponent-BEM` }
 
+
 __ITCSS new structure proposal__
 I think would be better mix SMACSS and ITCSS
-* Setting    => $variable                { Config, Global style, banrd color }
-* Tools      => @mixin general           { Global available tools like function, mixin }
-* Generic    => * {}                     { Low specificity reset, normalize}
-* Base       => h1 {}                    { unclassed html }
-* Object     => .ui-list {}              { OOCSS, Design Pattern Agnostically named }
-* Components => .component {}            { Specific UI component }
-* Trumps     => .one-half { !important } { Only affect one DOM piece at the time }
+ Setting    => $variable                { Config, Global style, banrd color }
+ Tools      => @mixin general           { Global available tools like function, mixin }
+ Generic    => * {}                     { Low specificity reset, normalize}
+ Base       => h1 {}                    { unclassed html }
+ Object     => .ui-list {}              { OOCSS, Design Pattern Agnostically named }
+ Components => .component {}            { Specific UI component }
+ Trumps     => .one-half { !important } { Only affect one DOM piece at the time }
 
 
 ## Good Patterns
@@ -77,7 +78,7 @@ Comparing SMACSS I removed states.
 
 ## Resources:
 * [Video Organizing CSS with OOCSS, SMACSS, and BEM](https://www.youtube.com/watch?v=IKFq2cSbQ4Q) 
-* [Slides Organizing CSS with OOCSS, SMACSS, and BEM]https://speakerdeck.com/mattstauffer/organizing-css-oocss-smacss-and-bem
+* [Slides Organizing CSS with OOCSS, SMACSS, and BEM](https://speakerdeck.com/mattstauffer/organizing-css-oocss-smacss-and-bem)
 * [Docs SMACSS](https://smacss.com/)
 * [Article BEM name spacing conventions](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) 
 * [Slide ITCSS solve specificity problems](https://speakerdeck.com/dafed/managing-css-projects-with-itcss)
