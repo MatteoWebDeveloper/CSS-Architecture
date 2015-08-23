@@ -18,7 +18,7 @@
 
 * vendor.scss { vendor }
 * base.scss { create base for your general element, no class allowed }
-  * normalize.css, general mixin-in and utils classes { `.b-namelayout-BEM` }
+  * reset normalize.css, general mixin-in and utils classes { `.b-namelayout-BEM` }
 * layouts.scss { load layouts dependencies }
   * layout utils classes
   * namelayout.scss { `.l-namelayout-BEM` and `.is-statename` }
@@ -27,9 +27,21 @@
 
 ---------------------------------------
 
-* shame.sass { when you start a new project write everything here and during the devolpment refactor the component are reusable. all the code that need to be refactor goes here. }
+* shame.sass { when you start a new project write everything here and during the devolpment refactor the component are reusable. all the code that need to be refactor goes here. `.s-namecomponent-BEM` }
+
+__ITCSS new structure proposal__
+I think would be better mix SMACSS and ITCSS
+* Setting    => $variable                { Config, Global style, banrd color }
+* Tools      => @mixin general           { Global available tools like function, mixin }
+* Generic    => * {}                     { Low specificity reset, normalize}
+* Base       => h1 {}                    { unclassed html }
+* Object     => .ui-list {}              { OOCSS, Design Pattern Agnostically named }
+* Components => .component {}            { Specific UI component }
+* Trumps     => .one-half { !important } { Only affect one DOM piece at the time }
+
 
 ## Good Patterns
+when use classes composition and when is better have a separate class concern
 * use preprocessor __Sass__ or __Less__
 * use __SMACSS__ principles to organise and split your styles code
 * mobile first
@@ -38,10 +50,10 @@
 * classes should only concern within their element and they __should not interfere with the parent element__ { that's why box-sizing: border-box is great }
 * classes should include __state classes__ private and public __variables__ and __medias__ definition { tablet, desktop, print }
 * use __@extend__ and __silent classes__
-* keep inheritance with @extend at one level
-* use @mixin when you want create a list of custom properties
+* keep __inheritance__ with @extend at __one level down__
+* use __@mixin__ when you want create a list of custom properties
 * use @extend only if you are going to apply those css rules to the component sharing the same concern
-* in your html and css separete structure from skin
+* in your html and css __separete structure from skin__
 * use index.scss to load dependencies
 * code should be self documented
 * order css rules alphebetically { minor improvment }
@@ -51,7 +63,7 @@
 * use gulp __sourcemap__, _autoprefix_ and _minify_
 
 ## Bad Patterns
-* you can style general elements (a p h1 ...) but you cannot rely on those selector because html elements purpose is to give meaningful content for the search engine. When you are applying a class to those element you should reset upon those style or even better apply the class on a non semantic element: html=> p span.c_text-description - css=> .c_text-description { css styles }
+* you can style general elements (a p h1 ...) but you cannot rely on those selector because html elements purpose is to give meaningful content for the search engine. When you are applying a class to those element you should apply a reset upon those style to keep a more consiste and solid architecture: html=> p.c_text-description - css=> .c_text-description { reset and css styles }
 * do not overuse gris classes, when the container is smaller than the mobile size is not worth it
 * separate state.scss
 * avoid id to styles and long selector
@@ -68,5 +80,5 @@ Comparing SMACSS I removed states.
 * [Slides Organizing CSS with OOCSS, SMACSS, and BEM]https://speakerdeck.com/mattstauffer/organizing-css-oocss-smacss-and-bem
 * [Docs SMACSS](https://smacss.com/)
 * [Article BEM name spacing conventions](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) 
-* [Slide IICSS solve specificity problems](https://speakerdeck.com/dafed/managing-css-projects-with-itcss)
+* [Slide ITCSS solve specificity problems](https://speakerdeck.com/dafed/managing-css-projects-with-itcss)
 * [Docs CSS Guide line](http://cssguidelin.es/)
