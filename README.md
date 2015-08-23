@@ -32,17 +32,17 @@
 
 __ITCSS new structure proposal__
 I think would be better mix SMACSS and ITCSS
- Setting    => $variable                { Config, Global style, banrd color }
- Tools      => @mixin general           { Global available tools like function, mixin }
- Generic    => * {}                     { Low specificity reset, normalize}
- Base       => h1 {}                    { unclassed html }
- Object     => .ui-list {}              { OOCSS, Design Pattern Agnostically named }
- Components => .component {}            { Specific UI component }
- Trumps     => .one-half { !important } { Only affect one DOM piece at the time }
+* Setting    => $variable                { Config, Global style, banrd color }
+* Tools      => @mixin general           { Global available tools like function, mixin }
+* Generic    => * {}                     { Low specificity reset, normalize}
+* Base       => h1 {}                    { unclassed html }
+* Object     => .ui-list {}              { OOCSS, Design Pattern Agnostically named }
+* Components => .component {}            { Specific UI component }
+* Trumps     => .one-half { !important } { Only affect one DOM piece at the time }
 
 
 ## Good Patterns
-when use classes composition and when is better have a separate class concern
+* classes composition can sometime overcomplicate the relationship between different styles. Follow this principle "duplication is better than the wrong abstraction" cit. Harry Roberts
 * use preprocessor __Sass__ or __Less__
 * use __SMACSS__ principles to organise and split your styles code
 * mobile first
