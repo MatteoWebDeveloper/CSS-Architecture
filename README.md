@@ -16,8 +16,6 @@
 
 ---------------------------------------
 
-
-
 * vendor.scss { vendor }
 * base.scss { create base for your general element, no class allowed }
   * normalize.css, general mixin-in and utils classes { `.b-namelayout-BEM` }
@@ -29,20 +27,20 @@
 
 ---------------------------------------
 
-* shame.sass { all the code that need to be refactor goes here, contain really specific code }
+* shame.sass { when you start a new project write everything here and during the devolpment refactor the component are reusable. all the code that need to be refactor goes here. }
 
 ## Good Patterns
 * use preprocessor __Sass__ or __Less__
 * use __SMACSS__ principles to organise and split your styles code
 * mobile first
-* use __BEM__ naming convention and include sass filename as part of the namespace
+* use __BEM__ naming convention and include sass filename as part of the namespace { .c_filename__elm }
 * flat selector { provide solid architecture and even better performance }
 * classes should only concern within their element and they __should not interfere with the parent element__ { that's why box-sizing: border-box is great }
 * classes should include __state classes__ private and public __variables__ and __medias__ definition { tablet, desktop, print }
 * use __@extend__ and __silent classes__
 * keep inheritance with @extend at one level
 * use @mixin when you want create a list of custom properties
-* use @extend to create bluprint 
+* use @extend only if you are going to apply those css rules to the component sharing the same concern
 * in your html and css separete structure from skin
 * use index.scss to load dependencies
 * code should be self documented
