@@ -32,13 +32,15 @@
 
 __ITCSS new structure proposal__
 I think would be better mix SMACSS and ITCSS
-* Setting    => $variable                { Config, Global style, banrd color }
-* Tools      => @mixin general           { Global available tools like function, mixin }
-* Generic    => * {}                     { Low specificity reset, normalize}
-* Base       => h1 {}                    { unclassed html }
-* Object     => .ui-list {}              { OOCSS, Design Pattern Agnostically named }
-* Components => .component {}            { Specific UI component }
-* Trumps     => .one-half { !important } { Only affect one DOM piece at the time }
+* Setting    => $variable                    { Config, Global style, banrd color }
+* Global
+* Tools      => @mixin general               { Global available tools like function, mixin }
+* Generic    => * {}                         { Low specificity reset, normalize}
+* Base       => h1 {}                        { unclassed html }
+* Object     => .o_ui-list {}                { OOCSS, Design Pattern Agnostically named }
+* Components => .c_component {}              { Specific UI component }
+* Shame      => .s_website-section-component { Website Section }
+* Trumps     => .t_one-half { !important }   { Only affect one DOM piece at the time }
 
 
 ## Good Patterns
@@ -77,9 +79,9 @@ Good/bad pattern are applied to style concerns. You can use id, and state classe
 Comparing SMACSS I removed states.
 
 ## Resources:
-* [Video Organizing CSS with OOCSS, SMACSS, and BEM](https://www.youtube.com/watch?v=IKFq2cSbQ4Q) 
+* [Video Organizing CSS with OOCSS, SMACSS, and BEM](https://www.youtube.com/watch?v=IKFq2cSbQ4Q)
 * [Slides Organizing CSS with OOCSS, SMACSS, and BEM](https://speakerdeck.com/mattstauffer/organizing-css-oocss-smacss-and-bem)
 * [Docs SMACSS](https://smacss.com/)
-* [Article BEM name spacing conventions](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) 
+* [Article BEM name spacing conventions](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
 * [Slide ITCSS solve specificity problems](https://speakerdeck.com/dafed/managing-css-projects-with-itcss)
 * [Docs CSS Guide line](http://cssguidelin.es/)
