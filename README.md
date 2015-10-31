@@ -46,9 +46,10 @@ vanilla CSS
 ```css
 .c_component {}                     // block
 .c_component--modifier {}           // block modifier
+.c_component.is-active {}           // block state
 .c_component__elment {}             // element
-.c_component__elment.is-active {}   // element state
 .c_component__elment--modifier {}   // element modifier
+.c_component__elment.is-active {}   // element state
 
 @media (min-width:730px; && max-width:1023px;) {}
 @media (min-width:730px; && max-width:1023px;) {}
@@ -62,10 +63,11 @@ SCSS
     $variable: 'value';      // local variable
 
     &--modifier {}           // block modifier
+    &.is-active {}           // block state
 
     &__elment {              // element
-        &.is-active {}       // element state
         &--modifier {}       // element modifier
+        &.is-active {}       // element state
     }
 
     @media #{$screen__media_tablet} {
