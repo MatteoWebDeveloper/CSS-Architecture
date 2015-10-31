@@ -8,12 +8,12 @@
 * encapsulation
 
 
-# CSS Architecture
+## CSS Architecture base
 CSS main architecture, style guide proposal:
 http://cssguidelin.es/
 
 
-#Code organisation ITCSS
+## Code organisation ITCSS
 ```scss
 * Setting    =>  $s_brand-color: red;               // Config, theme setting, brand color
 * Utils      =>  @mixin u_name-mixin () {}          // Global available tools like function, mixin (the original name was Tools)
