@@ -25,8 +25,8 @@ http://cssguidelin.es/
 * Components =>  .c_card {} .c_card__badge {}       // Designed pieces of UI
 + Shame      =>  .s_website-section-component {}    // Website section specific classes (It's not part of ITCSS)
 * Trumps     =>  .t_text-center { !important; }     // Last resort, only affect one specific piece of DOM
-[check](http://cssguidelin.es/#table-of-contents)
 ```
+[check](http://cssguidelin.es/#table-of-contents)
 
 
 ## CSS Naming convention
@@ -34,13 +34,14 @@ prefix + BEM
 ```sass
 .{group}_{file-namespace-block}
 ```
+
 ## SASS variables naming convention
 ```sass
 // setting.scss
 $variable: 'value';                // global variable
 
 // component.scss
-$c_component__variable: 'value';   // public variable
+$c_component__variable: 'value';   // public variable use only inside your file
 .c_component {                     // block
     $variable: 'value';            // local variable
 }
