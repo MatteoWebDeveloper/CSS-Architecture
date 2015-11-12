@@ -18,7 +18,7 @@ http://cssguidelin.es/
 * Setting    =>  $brand-color: red;                 // Config, theme setting, brand color
 * Tools      =>  @mixin name-mixin () {}            // Global available tools like function, mixin (the original name was Tools)
 * Generic    =>  * { box-sizing: border-box }       // Low specificity reset.css normalize.css
-+ Vendor     =>  @import external stylesheet        // You cannot change the css here (It's not part of ITCSS)
++ Vendor     =>  @import 'external-stylesheet'      // You cannot change the css here (It's not part of ITCSS)
 * Base       =>  h1 { font-size: $font-size; }      // unclassed html
 * Objects    =>  .o_ul-list {} .o_ul-list__item {}  // OOCSS, Design Pattern, No cosmetics, Agnostically named
 + Layout     =>  .l_side-body {}                    // Layout are essentially a subset of Object
