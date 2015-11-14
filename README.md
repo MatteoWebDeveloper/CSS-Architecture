@@ -7,29 +7,27 @@
 * separation of concerns
 * encapsulation
 
-
 ## CSS Architecture base
 CSS main architecture, style guide proposal:
 http://cssguidelin.es/
 
-
-## Code organisation ITCSS
+## Code organisation
 ```scss
 * Setting    =>  $brand-color: red;                 // Config, theme setting, brand color
-* Tools      =>  @mixin name-mixin () {}            // Global available tools like function, mixin (the original name was Tools)
-* Generic    =>  * { box-sizing: border-box }       // Low specificity reset.css normalize.css
-+ Vendor     =>  @import 'external-stylesheet';     // You cannot change the css here (It's not part of ITCSS)
-* Base       =>  h1 { font-size: $font-size; }      // unclassed html
-* Objects    =>  .o_ul-list {} .o_ul-list__item {}  // OOCSS, Design Pattern, No cosmetics, Agnostically named
+* Tool       =>  @mixin name-mixin () {}            // Global available tools like function, mixin
++ Vendor     =>  @import 'external-stylesheet';     // CSS Vendor like reset.css, normalise.css, bootstrap ect..
+* Base       =>  h1 { font-size: $font-size; }      // unclassed html (is optional)
+* Object     =>  .o_ul-list {} .o_ul-list__item {}  // OOCSS, Design Pattern, No cosmetics, Agnostically named
 + Layout     =>  .l_side-body {}                    // Layout are essentially a subset of Object
-* Components =>  .c_card {} .c_card__badge {}       // Designed pieces of UI
-+ Shame      =>  .s_website-section-component {}    // Website section specific classes (It's not part of ITCSS)
-* Trumps     =>  .t_text-center { !important; }     // Last resort, only affect one specific piece of DOM
+* Component  =>  .c_card {} .c_card__badge {}       // Designed pieces of UI
++ Shame      =>  .s_website-section-component {}    // refactor classes and website section specific classes
+* Trump      =>  .t_text-center { !important; }     // Last resort, only affect one specific piece of DOM
 ```
-[check](http://cssguidelin.es/#table-of-contents)
+It is a custom implementation of ITCSS
+[check Table of contents](http://cssguidelin.es/#table-of-contents)
 
 
-## CSS Naming convention
+## CSS Class Naming convention
 prefix + BEM
 ```sass
 .{group}_{file-namespace-block}
@@ -91,10 +89,37 @@ $c_component__variable: 'value';   // public variable
 ```
 
 ## Type of CSS Abstractions
-object      .grid
-component   .ui-button
-shame       .bof-component
-trumps      .text-center
+object      .o_grid
+layout      .l_side-body
+component   .c_ui-button
+shame       .s_bof-component
+trump      .t_text-center
+
+## Example of html structure
+```html
+<body>
+<div class="container"> <!-- bootstrap class -->
+
+    <div class="o_margin-top-xs-2"> <!-- object class -->
+
+        <div class="l_side-body"> <!-- layout class -->
+            <div class="l_side-body__side">
+
+                <div class="c_sidebar  c_sidebar--dark"> <!-- component class -->
+                    sidebar content
+                </div>
+
+            </div>
+            <div class="l_side-body__body">
+                <p class="t_text-bold">Body content</p> <!-- trump class-->
+            </div>
+        </div>
+
+    <div>
+
+</div>
+</body>
+```
 
 ## Good Patterns
 * classes composition can sometime overcomplicate the relationship between different styles. Follow this principle "duplication is better than the wrong abstraction" cit. Harry Roberts
