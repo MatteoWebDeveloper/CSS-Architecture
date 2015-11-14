@@ -35,12 +35,12 @@ prefix + BEM
 
 ## SASS variables naming convention
 ```sass
-// setting.scss
-$variable: 'value';                // global variable
+// setting/filename.scss
+$filename__prop-name: 'value';     // global variable
 
-// component.scss
-$c_component__variable: 'value';   // public variable use only inside your file
-.c_component {                     // block
+// component/filename.scss
+$c_filename__variable: 'value';    // public variable use only inside your file
+.c_filename {                      // block
     $variable: 'value';            // local variable
 }
 ```
