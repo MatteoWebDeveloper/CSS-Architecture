@@ -89,11 +89,13 @@ $c_component__variable: 'value';   // public variable
 ```
 
 ## Type of CSS Abstractions
-object      .o_grid
-layout      .l_side-body
-component   .c_ui-button
-shame       .s_bof-component
-trump      .t_text-center
+```sass
+/* object    */  .o_grid            {}
+/* layout    */  .l_side-body       {}
+/* component */  .c_nav             {}
+/* shame     */  .s_about-component {}
+/* trump     */  .t_text-center     {}
+```
 
 ## Example of html structure
 ```html
