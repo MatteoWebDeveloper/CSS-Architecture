@@ -1,10 +1,10 @@
 // main.scss
 @import 'setting';
-@import 'global';
-@import 'tools';
-@import 'generic';
+@import 'tool';
+@import 'vendor';
 @import 'base';
 @import 'object';
-@import 'components';
+@import 'layout';
+@import 'component';
 @import 'shame';
-@import 'trumps';
+@import 'trump';
