@@ -1,0 +1,23 @@
+{
+  "name": "css-architecture",
+  "version": "1.0.0",
+  "description": "Base to create modular CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatteoWebDesigner/CSS-Architecture.git"
+  },
+  "author": "Matteo Gilardoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatteoWebDesigner/CSS-Architecture/issues"
+  },
+  "homepage": "https://github.com/MatteoWebDesigner/CSS-Architecture#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0"
+  }
+}
