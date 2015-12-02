@@ -46,6 +46,8 @@ $c_filename__variable: 'value';    // public variable use only inside your file
 ```
 
 ## Structure of CSS classes
+CSS file name should reflect the CSS classed you are using, this help have modular CSS.
+
 vanilla CSS
 ```css
 .c_component {}                     /* block */
