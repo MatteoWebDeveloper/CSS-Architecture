@@ -10,5 +10,5 @@
 `bower install`
 
 ## tasks:
-* gulp
-* gulp --sm
+* `gulp`
+* `gulp --sm`
