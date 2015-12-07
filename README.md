@@ -13,9 +13,9 @@ http://cssguidelin.es/
 
 ## Code organisation
 ```scss
++ Vendor     =>  @import 'external-stylesheet';     // if you need to customize a vendor like bootstrap (optional)
 * Setting    =>  $brand-color: red;                 // Config, theme setting, brand color
 * Tool       =>  @mixin name-mixin () {}            // Global available tools like function, mixin
-+ Vendor     =>  @import 'external-stylesheet';     // CSS Vendor like reset.css, normalise.css, bootstrap ect..
 * Base       =>  h1 { font-size: $font-size; }      // unclassed html (is optional)
 * Object     =>  .o_ul-list {} .o_ul-list__item {}  // OOCSS, Design Pattern, No cosmetics, Agnostically named
 + Layout     =>  .l_side-body {}                    // Layout are essentially a subset of Object

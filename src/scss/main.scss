@@ -1,14 +1,10 @@
 // main.scss
+@import 'vendor/index';
 @import 'setting/index';
 @import 'tool/index';
-@import 'vendor/index';
 @import 'base/index';
 @import 'object/index';
 @import 'layout/index';
 @import 'component/index';
 @import 'shame/index';
 @import 'trump/index';
-
-body {
-    color: red;
-}
