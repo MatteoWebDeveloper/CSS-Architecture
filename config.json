@@ -1,0 +1,20 @@
+{
+    "localhost":  "http://localhost:8080",
+    "port":       "8080",
+    "distFiles":  "dist/*",
+    "htmlFiles":  "index.html",
+    "distHtml":   "dist/",
+    "sassIndex":  "src/scss/main.scss",
+    "sassFiles":  "src/scss/**/*.scss",
+    "cssDist":    "dist/css/",
+    "jsFiles":    "src/js/**/*.js",
+    "jsDist":     "dist/js/",
+    "vendor": {
+        "css": [],
+        "js": [
+            "bower_components/lodash/lodash.js",
+            "bower_components/moment/moment.js",
+            "bower_components/angular/angular.js"
+        ]
+    }
+}

@@ -16,6 +16,9 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "~3.3.6"
+    "bootstrap-sass": "~3.3.6",
+    "angular": "~1.4.8",
+    "lodash": "~3.10.1",
+    "moment": "~2.10.6"
   }
 }

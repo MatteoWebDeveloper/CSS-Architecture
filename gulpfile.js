@@ -16,44 +16,49 @@ var minifyCss    = require('gulp-minify-css');
 var concat       = require('gulp-concat');
 var browserify   = require('gulp-browserify');
 var jshint       = require('gulp-jshint');
-
-var path = {
-    localhost: 'http://localhost:8080',
-    distFiles: 'dist/*',
-    htmlFiles : 'index.html',
-    distHtml: 'dist/',
-    sassIndex: 'src/scss/main.scss',
-    sassFiles: 'src/scss/**/*.scss',
-    cssDist: 'dist/css/',
-    jsFiles: 'src/js/**/*.js',
-    jsDist: 'dist/js/'
-};
+var config       = require('./config.json');
 
 function isSourceMap ()
 {
     return parseArgs(process.argv).sm;
-}
+};
+
 
 gulp.task('clean', function ()
 {
-    return del([path.distFiles]);
+    return del([config.distFiles]);
 });
 
 
 gulp.task('html', function()
 {
     return gulp
-        .src(path.htmlFiles)
+        .src(config.htmlFiles)
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest(path.distHtml))
+        .pipe(gulp.dest(config.distHtml))
+        .pipe(livereload());
+});
+
+
+gulp.task('cssVendor', function()
+{
+    if (config.vendor.css.length == 0) {
+        console.log('vendor css empty');
+        return false;
+    }
+
+    return gulp
+        .src(config.vendor.css)
+        .pipe(concat('vendor.css'))
+        .pipe(gulp.dest(config.cssDist))
         .pipe(livereload());
 });
 
 
 gulp.task('css', function()
 {
-    gulp
-        .src(path.sassIndex)
+    return gulp
+        .src(config.sassIndex)
         .pipe(
             gulpif(isSourceMap(), sourcemaps.init())
         )
@@ -65,7 +70,22 @@ gulp.task('css', function()
         .pipe(
             gulpif(isSourceMap(),sourcemaps.write())
         )
-        .pipe(gulp.dest(path.cssDist))
+        .pipe(gulp.dest(config.cssDist))
+        .pipe(livereload());
+});
+
+
+gulp.task('jsVendor', function()
+{
+    if (config.vendor.js.length == 0) {
+        console.log('vendor js empty');
+        return false;
+    }
+
+    return gulp
+        .src(config.vendor.js)
+        .pipe(concat('vendor.js'))
+        .pipe(gulp.dest(config.jsDist))
         .pipe(livereload());
 });
 
@@ -73,8 +93,8 @@ gulp.task('css', function()
 gulp.task('js', function()
 {
     return gulp
-        .src(path.jsFiles)
-        .pipe(gulp.dest(path.jsDist))
+        .src(config.jsFiles)
+        .pipe(gulp.dest(config.jsDist))
         .pipe(livereload());
 });
 
@@ -83,16 +103,17 @@ gulp.task('watch', function()
 {
     livereload.listen();
 
-    gulp.watch(path.htmlFiles,['html']);
-    gulp.watch(path.sassFiles,['css']);
-    gulp.watch(path.jsFiles,['js']);
+    gulp.watch(config.htmlFiles,['html']);
+    gulp.watch(config.sassFiles,['css']);
+    gulp.watch(config.jsFiles,['js']);
 });
 
 
-gulp.task('connect', function() {
+gulp.task('connect', function()
+{
     connect.server({
         root: ['dist'],
-        port: 8080,
+        port: config.port,
         livereload: true
     });
 
@@ -100,9 +121,10 @@ gulp.task('connect', function() {
     gulp
     .src(__filename)
     .pipe(
-        open({uri: path.localhost})
+        open({uri: config.localhost})
     );
 });
 
+
 // gulp --sm you activate sourcemap task
-gulp.task('default',['clean','html','css','js','connect','watch']);
+gulp.task('default',['clean','html','cssVendor','css','jsVendor','js','connect','watch']);
