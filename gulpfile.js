@@ -5,6 +5,7 @@ var parseArgs    = require('minimist');
 var gulp         = require('gulp');
 var gutil        = require('gulp-util');
 var gulpif       = require('gulp-if');
+var runSequence  = require('run-sequence');
 var connect      = require('gulp-connect');
 var open         = require('gulp-open');
 var livereload   = require('gulp-livereload');
@@ -16,6 +17,7 @@ var minifyCss    = require('gulp-minify-css');
 var concat       = require('gulp-concat');
 var browserify   = require('gulp-browserify');
 var jshint       = require('gulp-jshint');
+var uglify       = require('gulp-uglify');
 var config       = require('./config.json');
 
 function isSourceMap ()
@@ -50,8 +52,7 @@ gulp.task('cssVendor', function()
     return gulp
         .src(config.vendor.css)
         .pipe(concat('vendor.css'))
-        .pipe(gulp.dest(config.cssDist))
-        .pipe(livereload());
+        .pipe(gulp.dest(config.cssDist));
 });
 
 
@@ -85,8 +86,7 @@ gulp.task('jsVendor', function()
     return gulp
         .src(config.vendor.js)
         .pipe(concat('vendor.js'))
-        .pipe(gulp.dest(config.jsDist))
-        .pipe(livereload());
+        .pipe(gulp.dest(config.jsDist));
 });
 
 
@@ -94,7 +94,14 @@ gulp.task('js', function()
 {
     return gulp
         .src(config.jsFiles)
-        .pipe(gulp.dest(config.jsDist))
+        .pipe(
+            gulpif(isSourceMap(), sourcemaps.init())
+        )
+        .pipe(uglify())
+        .pipe(
+            gulpif(isSourceMap(),sourcemaps.write())
+        )
+        .pipe(gulp.dest('dist/js/main.js'))
         .pipe(livereload());
 });
 
@@ -127,4 +134,7 @@ gulp.task('connect', function()
 
 
 // gulp --sm you activate sourcemap task
-gulp.task('default',['clean','html','cssVendor','css','jsVendor','js','connect','watch']);
+gulp.task('default', function ()
+{
+    runSequence('clean',['html','cssVendor','css','jsVendor','js'],'connect','watch')
+});
