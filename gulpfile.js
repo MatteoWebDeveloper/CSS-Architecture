@@ -14,6 +14,9 @@ var htmlmin      = require('gulp-htmlmin');
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var minifyCss    = require('gulp-minify-css');
+var symdiff      = require('gulp-symdiff');
+var symdiffHtml  = require('symdiff-html');
+var symdiffCss   = require('symdiff-css');
 var concat       = require('gulp-concat');
 var browserify   = require('gulp-browserify');
 var jshint       = require('gulp-jshint');
@@ -32,12 +35,20 @@ gulp.task('clean', function ()
 });
 
 
+gulp.task('fonts', function ()
+{
+    return gulp
+        .src(config.fontFiles)
+        .pipe(gulp.dest(config.fontDist));
+});
+
+
 gulp.task('html', function()
 {
     return gulp
         .src(config.htmlFiles)
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest(config.distHtml))
+        .pipe(gulp.dest(config.htmlDist))
         .pipe(livereload());
 });
 
@@ -76,6 +87,21 @@ gulp.task('css', function()
 });
 
 
+gulp.task('css-unused', function ()
+{
+    gulp
+    .src([config.cssDistFiles, config.htmlFiles])
+    .pipe(symdiff({
+        templates: [symdiffHtml],      // list all templates plugins
+        css: [symdiffCss]//,           // list all css plugins
+        //ignore: [/^ignore/]          // classes to ignore
+    })
+    .on('error', function() {
+        process.exit(1);    // break the build
+    }));
+});
+
+
 gulp.task('jsVendor', function()
 {
     if (config.vendor.js.length == 0) {
@@ -101,7 +127,7 @@ gulp.task('js', function()
         .pipe(
             gulpif(isSourceMap(),sourcemaps.write())
         )
-        .pipe(gulp.dest('dist/js/main.js'))
+        .pipe(gulp.dest(config.jsDist))
         .pipe(livereload());
 });
 
@@ -136,5 +162,5 @@ gulp.task('connect', function()
 // gulp --sm you activate sourcemap task
 gulp.task('default', function ()
 {
-    runSequence('clean',['html','cssVendor','css','jsVendor','js'],'connect','watch')
+    runSequence('clean',['fonts','html','cssVendor','css','jsVendor','js'],'connect','watch')
 });
