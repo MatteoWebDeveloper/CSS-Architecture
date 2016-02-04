@@ -14,11 +14,12 @@ http://cssguidelin.es/
 ## Code organisation
 ```scss
 + Vendor     =>  @import 'external-stylesheet';     // if you need to customize a vendor like bootstrap (optional)
++ VendorExt  =>  .alert {}                          // Vendor class decoration
 * Setting    =>  $brand-color: red;                 // Config, theme setting, brand color
-* Tool       =>  @mixin name-mixin () {}            // Global available tools like function, mixin
-* Base       =>  h1 { font-size: $font-size; }      // unclassed html (is optional)
+* Tool       =>  @mixin name-mixin () {}            // Global available tools like function, mixin           
+----
+* Base       =>  .b_reset-a                         // element reset
 * Object     =>  .o_ul-list {} .o_ul-list__item {}  // OOCSS, Design Pattern, No cosmetics, Agnostically named
-+ Layout     =>  .l_side-body {}                    // Layout are essentially a subset of Object
 * Component  =>  .c_card {} .c_card__badge {}       // Designed pieces of UI
 + Shame      =>  .s_website-section-component {}    // refactor classes and website section specific classes
 * Trump      =>  .t_text-center { !important; }     // Last resort, only affect one specific piece of DOM
@@ -98,7 +99,6 @@ $c_component__variable: 'value';   // public variable
 ## Type of CSS Abstractions
 ```sass
 /* object    */  .o_grid            {}
-/* layout    */  .l_side-body       {}
 /* component */  .c_nav             {}
 /* shame     */  .s_about-component {}
 /* trump     */  .t_text-center     { !important }
