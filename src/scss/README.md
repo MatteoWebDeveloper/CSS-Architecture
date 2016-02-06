@@ -13,15 +13,14 @@ http://cssguidelin.es/
 
 ## Code organisation
 ```scss
-+ Vendor     =>  @import 'external-stylesheet';     // if you need to customize a vendor like bootstrap (optional)
-+ VendorExt  =>  .alert {}                          // Vendor class decoration
 * Setting    =>  $brand-color: red;                 // Config, theme setting, brand color
-* Tool       =>  @mixin name-mixin () {}            // Global available tools like function, mixin           
-----
+* Tool       =>  @mixin name-mixin () {}            // Global available tools like function, mixin
++ Vendor     =>  @import 'external-stylesheet';     // if you need to customize a vendor like bootstrap (optional)
++ VendorExt  =>  .alert {}                          // Vendor class extension
 * Base       =>  .b_reset-a                         // element reset
-* Object     =>  .o_ul-list {} .o_ul-list__item {}  // OOCSS, Design Pattern, No cosmetics, Agnostically named
+* Object     =>  .o_media {}                        // OOCSS, Design Pattern, No cosmetics, Agnostically named
 * Component  =>  .c_card {} .c_card__badge {}       // Designed pieces of UI
-+ Shame      =>  .s_website-section-component {}    // refactor classes and website section specific classes
++ Shame      =>  .s_product-component {}            // refactor classes and website section specific classes
 * Trump      =>  .t_text-center { !important; }     // Last resort, only affect one specific piece of DOM
 ```
 It is a custom implementation of ITCSS
@@ -41,8 +40,8 @@ $filename__prop-name: 'value';     // global variable
 
 // component/filename.scss
 $c_filename__variable: 'value';    // public variable use only inside your file
-.c_filename {                      // block
-    $variable: 'value';            // local variable
+.c_filename {                      // block element
+    $variable: 'value';            // scoped variable
 }
 ```
 
