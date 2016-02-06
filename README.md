@@ -1,8 +1,8 @@
 # CSS Architecture setup
 
 #Docs
-[CSS development procedure](development-procedure.md)
-[CSS Architecture doc](src/scss/README.md)
+- [CSS development procedure](development-procedure.md)
+- [CSS Architecture doc](src/scss/README.md)
 
 ## install node packages
 `npm install`

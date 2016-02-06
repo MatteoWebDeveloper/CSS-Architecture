@@ -4,6 +4,10 @@
 // * Trump
 // * Tool
 // * Base
+// * Object
+// * Component
+// * Shame
+// * Trump
 
 /* @group Vendor */
 @import "vendor/bootstrap-variables"; // bootstrap use !default so you can overwrite values positioning the file before
@@ -60,12 +64,11 @@
 
 
 /* @group Vendor-ext */
-@import 'vendor-ext/index';
+@import 'vendor-ext/alert';
 /* @end Vendor-ext */
 
 
 /* @group Setting */
-@import 'setting/bootstrap-theme';
 @import 'setting/theme';
 /* @end Setting */
 

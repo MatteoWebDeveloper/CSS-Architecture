@@ -1,5 +1,5 @@
 @mixin grid-spacing ($properties, $listColumnSizes) {
-    $mapMediaQuery: $t_theme__bootstrap_media_query;
+    $mapMediaQuery: $theme__media_query_map;
 
     // loop media query
     @each $media-name, $media-query-breakpoint in $mapMediaQuery {

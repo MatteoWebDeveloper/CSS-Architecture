@@ -1,6 +1,6 @@
-$s_theme__font-location: '../fonts/';
+$theme__font-location: '../fonts/';
 
-$s_theme__bootstrap_media_query: (
+$theme__media_query_map: (
    xs: ($screen-xs-min),
    sm: ($screen-sm-min),
    md: ($screen-md-min)
