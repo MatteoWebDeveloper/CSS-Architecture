@@ -1,7 +1,12 @@
 // Table of Contents:
+
+// * Setting
+// * Tool
+
 // * Vendor
 // * Vendor-ext
-// * Tool
+
+// the structure below is fine
 // * Base
 // * Object
 // * Component
@@ -9,7 +14,7 @@
 // * Trump
 
 /* @group Vendor */
-@import "vendor/bootstrap-variables"; // bootstrap use !default so you can overwrite values positioning the file before
+@import "vendor-ext/bootstrap-variables"; // bootstrap use !default so you can overwrite values positioning the file before
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables"; // it is overwritten by vendor/bootstrap-variables
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
