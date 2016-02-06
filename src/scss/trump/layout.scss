@@ -1,0 +1,8 @@
+// namespaces:
+
+$t_layout__width-height_grid: 0, 15px, 30px, 60px, 90px;
+
+.t_width {
+    $property: 'width';
+    @include grid-spacing($property,$t_layout__width-height_grid)
+}

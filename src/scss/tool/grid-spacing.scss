@@ -1,0 +1,25 @@
+@mixin grid-spacing ($properties, $listColumnSizes) {
+    $mapMediaQuery: $t_theme__bootstrap_media_query;
+
+    // loop media query
+    @each $media-name, $media-query-breakpoint in $mapMediaQuery {
+
+    // output
+    @media (min-width: $media-query-breakpoint) {
+
+    // loop column
+    @each $colSize in $listColumnSizes {
+        $colIndex: index($listColumnSizes, $colSize) - 1;
+
+        // output .namespace-xs-0
+        &-#{$media-name}-#{$colIndex} {
+        @each $propName in $properties {
+            #{$propName}: $colSize !important;
+        }
+        }
+
+    }
+    }
+
+    }
+}
