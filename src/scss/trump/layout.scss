@@ -1,27 +1,73 @@
 // namespaces:
+// * width and height
+// * padding
+// * margin
+// * text-size
 
-$t_layout__width-height_grid: 0, 15px, 30px, 60px, 90px;
+// config
+$t_layout__width-height_grid: 0, 5px, 15px, 30px, 60px, 90px, 120px, 150px, 180px, 210px;
+$t_layout__padding-margin_grid: 0, 2px, 5px, 10px, 15px, 20px, 25px, 30px, 45px, 60px, 75px, 90px;
+$t_layout__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20px, 22px, 24px, 26px, 30px, 40px, 50px, 60px, 120px;
 
+/* group width and height */
 .t_width {
     $property: 'width';
     @include grid-spacing($property,$t_layout__width-height_grid)
 }
 
-$t_layout__padding-margin_grid: 0, 2px, 5px, 10px, 15px, 20px, 25px, 30px, 45px, 60px, 75px, 90px;
+.t_height {
+    $property: 'height';
+    @include grid-spacing($property,$t_layout__width-height_grid)
+}
+/* end width and height */
 
+/* group padding */
 .t_padding {
     $property: 'padding';
-    @include grid-spacing($property,$t_layout__width-height_grid)
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
 }
+/* end padding */
 
+/* group margin */
 .t_margin {
     $property: 'margin';
-    @include grid-spacing($property,$t_layout__width-height_grid)
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
 }
 
-$t_layout__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20px, 22px, 24px, 26px, 30px, 40px, 50px, 60px, 120px;
+.t_margin-vertical {
+    $property: 'margin-top','margin-bottom';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
 
+.t_margin-horizontal {
+    $property: 'margin-left','margin-right';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
+
+.t_margin-top {
+    $property: 'margin-top';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
+
+.t_margin-right {
+    $property: 'margin-top';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
+
+.t_margin-bottom {
+    $property: 'margin-top';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
+
+.t_margin-left {
+    $property: 'margin-top';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
+/* end margin */
+
+/* group text-size */
 .t_text-size {
     $property: 'padding';
-    @include grid-spacing($property,$t_layout__width-height_grid)
+    @include grid-spacing($property,$t_layout__font-size_grid)
 }
+/* end text-size */
