@@ -1,0 +1,26 @@
+@mixin build-color ($color, $property) {
+    // static
+    & {
+        #{$property}: $color !important;
+    }
+
+    // on hover
+    &-hover {
+        transition: color .6s;
+        &:hover { #{$property}: $color !important; }
+    }
+
+    // on parent hover,
+    // if you need something more specific create a shame or component classes,
+    // do not nest multiple color-base-uphover
+    &-uphover {
+        &__target { transition: color .6s; }
+        &:hover &__target { #{$property}: $color !important;}
+    }
+
+    // output =>
+    // .color-base
+    // .color-base-hover
+    // .color-base-uphover
+    // .color-base-uphover__target
+}

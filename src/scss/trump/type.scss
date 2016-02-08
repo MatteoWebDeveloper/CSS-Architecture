@@ -7,3 +7,15 @@
 .t_text-italic {
     font-weight: italic;
 }
+
+.t_first-uppercase-only {
+    text-transform: lowercase;
+
+    &:first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.t_color-gray-base { @include build-color($gray-base,'color'); }
+
+.t_bgcolor-gray-base { background-color: $gray-base; }

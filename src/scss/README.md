@@ -13,10 +13,10 @@ http://cssguidelin.es/
 
 ## Code organisation
 ```scss
++ Vendor     =>  @import                            // Vendor dependencies
++ VendorExt  =>  .alert {}                          // Vendor class extension
 * Setting    =>  $brand-color: red;                 // Config, theme setting, brand color
 * Tool       =>  @mixin name-mixin () {}            // Global available tools like function, mixin
-+ Vendor     =>  @import 'external-stylesheet';     // if you need to customize a vendor like bootstrap (optional)
-+ VendorExt  =>  .alert {}                          // Vendor class extension
 * Base       =>  .b_reset-a                         // element reset
 * Object     =>  .o_media {}                        // OOCSS, Design Pattern, No cosmetics, Agnostically named
 * Component  =>  .c_card {} .c_card__badge {}       // Designed pieces of UI
