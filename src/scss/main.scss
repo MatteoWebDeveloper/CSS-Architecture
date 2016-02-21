@@ -1,89 +1,35 @@
 // Table of Contents:
-// * Vendor
-// * Vendor-ext
 // * Setting
 // * Tool
+// * Generic
+// * Extension
 // * Base
 // * Object
 // * Component
-// * Shame
+// * Section
 // * Trump
 
-/* @group Vendor */
-// Core variables and mixins
-@import "vendor/bootstrap-variables";
-//@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables"; // it is overwritten by vendor/bootstrap-variables
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
-// Reset and dependencies
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/print";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
-
-// Core
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
-//@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/code";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
-//@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
-
-// Components
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navs";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/pager";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/labels";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/badges";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/media";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/panels";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/wells";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/close";
-
-// Components w/ JavaScript
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/modals";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
-
-// Utility classes
-//@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
-//@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
-@import 'vendor/fontello.scss';
-/* @end Vendor */
-
-
-/* @start Vendor Extension */
-@import 'vendor-ext/alerts';
-/* @end Vendor Extension */
-
-
-/* @group Setting */
+/* @start Setting */
 @import "setting/theme";
 /* @end Setting */
 
 
-/* @group Tools */
+/* @start Tool */
 @import 'tool/grid-spacing';
 @import 'tool/build-color';
-/* @end Tools */
+/* @end Tool */
 
 
-/* @group Base */
-@import "base/reset-element";
-/* @end Base */
+/* @start Generic */
+@import 'generic/bootstrap';
+@import 'generic/fontello';
+/* @end Generic */
+
+
+/* @start Extension */
+@import 'extension/alerts';
+/* @end Extension */
 
 
 /* @group Object */
@@ -97,7 +43,7 @@
 
 
 /* @group Shame */
-@import 'shame/index';
+@import 'section/index';
 /* @end Shame */
 
 

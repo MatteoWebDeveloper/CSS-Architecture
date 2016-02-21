@@ -1,18 +1,14 @@
-// namespaces:
+.t_text-bold { font-weight: bold !important; }
+.t_text-italic { font-style: italic !important; }
 
-.t_text-bold {
-    font-weight: bold;
-}
-
-.t_text-italic {
-    font-weight: italic;
-}
-
-.t_first-uppercase-only {
-    text-transform: lowercase;
+.t_text-lowercase { text-transform: lowercase !important; }
+.t_text-capitalise { text-transform: capitalize !important; }
+.t_text-uppercase { text-transform: uppercase !important; }
+.t_text-uppercase-first {
+    text-transform: lowercase !important;
 
     &:first-letter {
-        text-transform: uppercase;
+        text-transform: uppercase- !important;
     }
 }
 

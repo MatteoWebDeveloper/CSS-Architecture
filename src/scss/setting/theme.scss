@@ -3,8 +3,32 @@
 $theme__color-red: #E21717;
 
 // media query
+$theme__media-mobile-min: 0;
+$theme__media-tablet-min: 768px;
+$theme__media-desktop-min: 1025px;
+$theme__media-mobile-max: $theme__media-tablet-min - 1; // calcolated
+$theme__media-tablet-max: $theme__media-desktop-min - 1;
+
+// gradual media query
 $theme__media_query_map: (
-   xs: ($screen-xs-min),
-   sm: ($screen-sm-min),
-   md: ($screen-md-min)
+   xs: ($theme__media-mobile-min),
+   sm: ($theme__media-tablet-min),
+   md: ($theme__media-desktop-min)
 );
+
+// exclusive media query
+$theme__media-query-only-map: (
+   xs: ($theme__media-mobile-min),
+   sm: ($theme__media-tablet-min),
+   md: ($theme__media-desktop-min)
+);
+
+// interpolation gradual media query
+// mobile first media
+$theme__media-sm: '(min-width: #{$theme__media-tablet-min})';
+$theme__media-md: '(min-width: #{$theme__media-desktop-min})';
+
+// exclusive gradual media query
+$theme__media-xs-only: '(min-width: #{$theme__media-mobile-min}) and (max-width: #{$theme__media-mobile-max})';
+$theme__media-sm-only: '(min-width: #{$theme__media-tablet-min}) and (max-width: #{$theme__media-tablet-max})';
+// desktop is the hightest media query use $theme__media-md

@@ -20,6 +20,22 @@ var config = {
             "bower_components/angular/angular.js"
         ]
     },
+    csslint : {
+        'adjoining-classes': false,
+        'box-model': false,
+        'box-sizing': false,
+        'compatible-vendor-prefixes': false,
+        'important': false,
+        'outline-none': false,
+        'order-alphabetical': false,
+        'font-sizes': false,
+        'qualified-headings': false,
+        'unqualified-attributes': false,
+        'regex-selectors': false,
+        'unique-headings': false,
+        'universal-selector': false,
+        'zero-units': false
+    },
     templates: [
         'src/pages/*.html',
         'src/js/**/*.js'

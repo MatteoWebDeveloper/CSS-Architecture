@@ -1,27 +1,30 @@
 'use strict';
 
-var _            = require('lodash');
-var del          = require('del');
-var parseArgs    = require('minimist');
-var gulp         = require('gulp');
-var gutil        = require('gulp-util');
-var gulpif       = require('gulp-if');
-var check        = require('gulp-check');
-var runSequence  = require('run-sequence');
-var connect      = require('gulp-connect');
-var open         = require('gulp-open');
-var livereload   = require('gulp-livereload');
-var sourcemaps   = require('gulp-sourcemaps');
-var htmlmin      = require('gulp-htmlmin');
-var sass         = require('gulp-sass');
-var stylelint    = require('gulp-stylelint');
-var autoprefixer = require('gulp-autoprefixer');
-var minifyCss    = require('gulp-minify-css');
-var concat       = require('gulp-concat');
-var browserify   = require('gulp-browserify');
-var jshint       = require('gulp-jshint');
-var uglify       = require('gulp-uglify');
-var config       = require('./config.js');
+var _               = require('lodash');
+var del             = require('del');
+var parseArgs       = require('minimist');
+var gulp            = require('gulp');
+var gutil           = require('gulp-util');
+var gulpif          = require('gulp-if');
+var check           = require('gulp-check');
+var runSequence     = require('run-sequence');
+var connect         = require('gulp-connect');
+var open            = require('gulp-open');
+var livereload      = require('gulp-livereload');
+var sourcemaps      = require('gulp-sourcemaps');
+var htmlmin         = require('gulp-htmlmin');
+var sass            = require('gulp-sass');
+var autoprefixer    = require('gulp-autoprefixer');
+var csslint         = require('gulp-csslint');
+var symdiff         = require('gulp-symdiff');
+var symdiffHtml     = require('symdiff-html');
+var symdiffCss      = require('symdiff-css');
+var minifyCss       = require('gulp-minify-css');
+var concat          = require('gulp-concat');
+var browserify      = require('gulp-browserify');
+var jshint          = require('gulp-jshint');
+var uglify          = require('gulp-uglify');
+var config          = require('./config.js');
 
 
 function isSourceMap ()
@@ -33,53 +36,6 @@ function isSourceMap ()
 gulp.task('clean', function ()
 {
     return del([config.distFiles]);
-});
-
-
-gulp.task('css-deprecated', function ()
-{
-    // to remove the css class search the comment "// @deprecated"
-    var CSS_CLASS_LIST = config.deprecatedClasses,
-        dToday = new Date(),
-        dFinalStage = new Date(config.deprecationEndDate),
-        today = dToday.getTime(),
-        finalStage = dFinalStage.getTime()
-    ;
-
-    _.forEach(CSS_CLASS_LIST, function(obj, key) {
-
-        gulp
-        .src(config.templates)
-        .pipe(
-            check(obj.regex)
-        )
-        .on('error', function (err) {
-
-            if (today >= finalStage) {
-                gutil.log(
-                    '\n\n' +
-                    gutil.colors.red('DANGER CSS CLASS Deprecated: \n') +
-                    '@deprecated: ' + gutil.colors.yellow(obj.oldClass) + ', \n' +
-                    '@use: ' + gutil.colors.green(obj.newClass) +
-                    '\n'
-                );
-                gutil.log(
-                    gutil.colors.red('Build Process has been stop, replace the class inside your project, the css class does not exist anymore')
-                );
-                process.exit(0);
-            } else {
-                gutil.log(
-                    '\n\n' +
-                    gutil.colors.yellow('WARNING CSS CLASS Deprecated: \n') +
-                    '@deprecated: ' + gutil.colors.yellow(obj.oldClass) + ', \n' +
-                    '@use: ' + gutil.colors.green(obj.newClass) +
-                    '\n'
-                );
-            }
-
-        });
-
-    });
 });
 
 
@@ -135,18 +91,70 @@ gulp.task('css', function()
 });
 
 
+gulp.task('css-deprecated', function ()
+{
+    // to remove the css class search the comment "// @deprecated"
+    var CSS_CLASS_LIST = config.deprecatedClasses,
+        dToday = new Date(),
+        dFinalStage = new Date(config.deprecationEndDate),
+        today = dToday.getTime(),
+        finalStage = dFinalStage.getTime()
+    ;
+
+    _.forEach(CSS_CLASS_LIST, function(obj, key) {
+
+        gulp
+        .src(config.templates)
+        .pipe(
+            check(obj.regex)
+        )
+        .on('error', function (err) {
+
+            if (today >= finalStage) {
+                gutil.log(
+                    '\n\n' +
+                    gutil.colors.red('DANGER CSS CLASS Deprecated: \n') +
+                    '@deprecated: ' + gutil.colors.yellow(obj.oldClass) + ', \n' +
+                    '@use: ' + gutil.colors.green(obj.newClass) +
+                    '\n'
+                );
+                gutil.log(
+                    gutil.colors.red('Build Process has been stop, replace the class inside your project, the css class does not exist anymore')
+                );
+                process.exit(0);
+            } else {
+                gutil.log(
+                    '\n\n' +
+                    gutil.colors.yellow('WARNING CSS CLASS Deprecated: \n') +
+                    '@deprecated: ' + gutil.colors.yellow(obj.oldClass) + ', \n' +
+                    '@use: ' + gutil.colors.green(obj.newClass) +
+                    '\n'
+                );
+            }
+
+        });
+
+    });
+});
+
+// I cannot add css-unused because output a big error
 gulp.task('css-unused', function ()
 {
-    gulp
+    return gulp
     .src([config.cssDistFiles, config.htmlFiles])
     .pipe(symdiff({
-        templates: [symdiffHtml],      // list all templates plugins
-        css: [symdiffCss]//,           // list all css plugins
-        //ignore: [/^ignore/]          // classes to ignore
-    })
-    .on('error', function() {
-        process.exit(1);    // break the build
+        templates: [symdiffHtml],        // list all templates plugins
+        css: [symdiffCss],               // list all css plugins
+        ignore: config.unusedCss.ignore  // classes to ignore
     }));
+});
+
+// I cannot add css-lint because output error
+gulp.task('css-lint', function ()
+{
+    gulp.src(config.cssDistFiles)
+    .pipe(csslint(config.csslint))
+    .pipe(csslint.reporter());
 });
 
 
@@ -210,5 +218,10 @@ gulp.task('connect', function()
 // gulp --sm you activate sourcemap task
 gulp.task('default', function ()
 {
-    runSequence('clean',['fonts','html','cssVendor','css','jsVendor','js','css-deprecated'],'connect','watch')
+    runSequence(
+        'clean',
+        ['fonts','html','cssVendor','css','jsVendor','js'],
+        ['css-deprecated'],
+        'connect','watch'
+    );
 });
