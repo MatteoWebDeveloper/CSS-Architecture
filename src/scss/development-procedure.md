@@ -1,6 +1,9 @@
+# Development procedure
+
 UI library and design consolidation is a slow and gradual process.
 
-1) When you start a new project you need a place to prototype quickly.
+## 1) Create section
+When you start a new project you need a place to prototype quickly.
 The best place for doing that is inside a section file:
 ```scss
 // homepage.scss
@@ -11,12 +14,14 @@ The best place for doing that is inside a section file:
 ```
 location classes are in general a bad practice for this reason are just a temporary place to develop and evolve your code. Once you see a pattern in your code you can extract that part and move it to a more consolidate category (base, object, component, trump, ...).
 
-2) Another set of classes that help with the development are trump and bootstrap utilities classes. Are classes with a small amount of proprieties and create loose dependencies. This make the component easier to compose and transform.
+## 2) Reuse trump and vendor classes
+Another set of classes that help with the development are trump and bootstrap utilities classes. Are classes with a small amount of proprieties and create loose dependencies. This make the component easier to compose and transform.
 ```html
 <div class="panel text-center sans-serif color-red  s_homepage-card  t_text-bold"></div> // use trump and bootstrap classes
 ```
 
-3) The final step is when you replace those low level classes (because they contain few proprieties) with something is now considerate a consolidate UI. Component can have variants but it is recommended to keep just a few of them. You can recognize them because they use a specific naming convention 's_component--variation-name'.
+## 3) Consolidate UI style
+The final step is when you replace those low level classes (because they contain few proprieties) with something is now considerate a consolidate UI. Component can have variants but it is recommended to keep just a few of them. You can recognize them because they use a specific naming convention 's_component--variation-name'.
 ```html
 <div class="text-center  c_card  c_card--secondary   t_text-bold"></div> // consolidate component
 ```
