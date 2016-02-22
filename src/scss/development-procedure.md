@@ -21,16 +21,16 @@ Another set of classes that help with the development are trump and bootstrap ut
 ```
 
 ## 3) Consolidate UI style
-The final step is when you replace those low level classes (because they contain few proprieties) with something is now considerate a consolidate UI. Component can have variants but it is recommended to keep just a few of them. You can recognize them because they use a specific naming convention 's_component--variation-name'.
+The last step is when you replace those low level classes (because they contain few proprieties) with something is now considerate a consolidate UI. Component classes can have variants but it is recommended to keep just a few of them, you can recognize them because they use a specific naming convention 'c_component--variation-name'.
 ```html
 <div class="text-center  c_card  c_card--secondary   t_text-bold"></div> // consolidate component
 ```
 
-Another important aspect of building css is to keep in mind the specificity of the classes.
+It is important building css keep in mind the specificity of the classes.
 I use single class selector and the properties are overwritten only because are positioned after other properties.
 The code specificity is the following:
 
-
+// Lower specificity
 * general
 * base
 * object
@@ -40,6 +40,7 @@ The code specificity is the following:
     - component__element--variant
     - component.is-state
 * trump
+// Higher specificity
 
 for instance if you have the following composition:
 ```scss
@@ -54,5 +55,5 @@ for instance if you have the following composition:
 ```html
 <div class="text-center  c_card  c_card--secondary   t_text-bold"></div> // consolidate component
 ```
-Bootstrap class will be overwritten by the component,
-the component will be overwritten by the trump.
+Bootstrap class is overwritten by the component,
+the component class is overwritten by the trump class.
