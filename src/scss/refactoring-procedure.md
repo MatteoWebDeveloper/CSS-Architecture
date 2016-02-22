@@ -14,7 +14,7 @@ The procedure consist in the following steps:
 - check specificity [here](https://decadecity.net/sprue/css-specificity-graph)
 - check specificity (2) [here](https://jonassebastianohlsson.com/specificity-graph/)
 
-## 2) Decide a strategy
+## 2) Plan a strategy
 Provide a solution to improve the css architecture.
 Once you create a new standard, you can define the old a deprecated code.
 
