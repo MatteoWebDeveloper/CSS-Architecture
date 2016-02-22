@@ -36,7 +36,7 @@ The code specificity is the following:
 * base
 * object
 * component
-  component--variant
+    - component--variant
     - component__element
     - component__element--variant
     - component.is-state
