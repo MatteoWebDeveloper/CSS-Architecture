@@ -1,8 +1,8 @@
 #Css Regression test options:
-[Backstopjs](https://github.com/garris/BackstopJS)
-[PhantomCSS](https://github.com/Huddle/PhantomCSS)
-[Success](http://succss.ifzenelse.net/index.html)
-[CSS Critic](https://github.com/cburgmer/csscritic)
+* [Backstopjs](https://github.com/garris/BackstopJS)
+* [PhantomCSS](https://github.com/Huddle/PhantomCSS)
+* [Success](http://succss.ifzenelse.net/index.html)
+* [CSS Critic](https://github.com/cburgmer/csscritic)
 
 Test indipendent UI components.
 
