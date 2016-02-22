@@ -5,7 +5,7 @@
 - [CSS Development Procedure](src/scss/development-procedure.md)
 - [CSS Deprecation Procedure](src/scss/refactoring-procedure.md)
 - [CSS UI Library](src/scss/ui-library.md)
-- [CSS Regression Test](src/scss/regression-test.md)
+- [CSS Test](src/scss/test.md)
 - [CSS Tools](src/scss/tools.md)
 
 ## install node packages
