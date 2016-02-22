@@ -30,7 +30,7 @@ It is important building css keep in mind the specificity of the classes.
 I use single class selector and the properties are overwritten only because are positioned after other properties.
 The code specificity is the following:
 
-// Lower specificity
+#### Lower specificity
 * general
 * base
 * object
@@ -40,7 +40,7 @@ The code specificity is the following:
     - component__element--variant
     - component.is-state
 * trump
-// Higher specificity
+#### Higher specificity
 
 for instance if you have the following composition:
 ```scss
