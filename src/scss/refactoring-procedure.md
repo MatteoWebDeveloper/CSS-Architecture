@@ -10,7 +10,7 @@ The procedure consist in the following steps:
 - gulp css-unused
 - gulp css-deprecated
 - check general css quality [here](http://cssstats.com/)
-- check general css quality [here](http://www.testmycss.com/)
+- check general css quality (2) [here](http://www.testmycss.com/)
 - check specificity [here](https://decadecity.net/sprue/css-specificity-graph)
 - check specificity (2) [here](https://jonassebastianohlsson.com/specificity-graph/)
 
