@@ -52,10 +52,17 @@ $c_filename__variable: 'value';    // public variable use only inside your file
 
 
 ## Structure of CSS classes
-CSS Classes shall be mobile first and give the name of the css file..
+CSS Classes shall be mobile first and give the name of the css file. It is a good practise add comments with html example
 
 vanilla CSS
 ```css
+/*
+<div class="c_component c_component--modifier">
+    <div class="c_component__elment"></div>
+    <div class="c_component__elment c_component__elment--modifier"></div>
+    <div class="c_component__elment is-active"></div> // triggered by js
+</div>
+*/
 .c_component {}                     /* block */
 .c_component--modifier {}           /* block modifier */
 .c_component.is-active {}           /* block state */
