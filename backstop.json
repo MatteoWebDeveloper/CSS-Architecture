@@ -28,63 +28,10 @@
             "hideSelectors": [],
             "removeSelectors": [],
             "selectors": [
-
+                "[backstopjs-test] .btn",
+                "[backstopjs-test] .btn.btn-default",
+                "[backstopjs-test] .btn.btn-primary"
             ],
-            "readyEvent": null,
-            "delay": 500,
-            "onReadyScript": null,
-            "onBeforeScript": null
-        },
-        {
-            "label": "UI Library",
-            "url": "http://localhost:8080/ui-library-object.html",
-            "hideSelectors": [],
-            "removeSelectors": [],
-            "selectors": [],
-            "readyEvent": null,
-            "delay": 500,
-            "onReadyScript": null,
-            "onBeforeScript": null
-        },
-        {
-            "label": "UI Library",
-            "url": "http://localhost:8080/ui-library-component.html",
-            "hideSelectors": [],
-            "removeSelectors": [],
-            "selectors": [],
-            "readyEvent": null,
-            "delay": 500,
-            "onReadyScript": null,
-            "onBeforeScript": null
-        },
-        {
-            "label": "UI Library",
-            "url": "http://localhost:8080/ui-library-section.html",
-            "hideSelectors": [],
-            "removeSelectors": [],
-            "selectors": [],
-            "readyEvent": null,
-            "delay": 500,
-            "onReadyScript": null,
-            "onBeforeScript": null
-        },
-        {
-            "label": "UI Library",
-            "url": "http://localhost:8080/ui-library-trump.html",
-            "hideSelectors": [],
-            "removeSelectors": [],
-            "selectors": [],
-            "readyEvent": null,
-            "delay": 500,
-            "onReadyScript": null,
-            "onBeforeScript": null
-        },
-        {
-            "label": "UI Library - Extra",
-            "url": "http://localhost:8080/ui-library-extra.html",
-            "hideSelectors": [],
-            "removeSelectors": [],
-            "selectors": [],
             "readyEvent": null,
             "delay": 500,
             "onReadyScript": null,

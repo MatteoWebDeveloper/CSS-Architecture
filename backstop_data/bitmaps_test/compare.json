@@ -2,90 +2,90 @@
   "compareConfig": {
     "testPairs": [
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_0_s_career-media_0_mobile.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_0_s_career-media_0_mobile.png",
-        "selector": ".s_career-media",
-        "fileName": "0_0_s_career-media_0_mobile.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_0_backstopjs-testbtn_0_mobile.png",
+        "selector": "[backstopjs-test] .btn",
+        "fileName": "0_0_backstopjs-testbtn_0_mobile.png",
+        "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_1_text-header--set-3_0_mobile.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_1_text-header--set-3_0_mobile.png",
-        "selector": ".text-header--set-3",
-        "fileName": "0_1_text-header--set-3_0_mobile.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_1_backstopjs-testbtnbtn-default_0_mobile.png",
+        "selector": "[backstopjs-test] .btn.btn-default",
+        "fileName": "0_1_backstopjs-testbtnbtn-default_0_mobile.png",
+        "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_2_btn-danger_0_mobile.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_2_btn-danger_0_mobile.png",
-        "selector": ".btn-danger",
-        "fileName": "0_2_btn-danger_0_mobile.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-secondary_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_2_backstopjs-testbtnbtn-secondary_0_mobile.png",
+        "selector": "[backstopjs-test] .btn.btn-secondary",
+        "fileName": "0_2_backstopjs-testbtnbtn-secondary_0_mobile.png",
+        "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_0_s_career-media_1_tablet_v.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_0_s_career-media_1_tablet_v.png",
-        "selector": ".s_career-media",
-        "fileName": "0_0_s_career-media_1_tablet_v.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_0_backstopjs-testbtn_1_tablet_v.png",
+        "selector": "[backstopjs-test] .btn",
+        "fileName": "0_0_backstopjs-testbtn_1_tablet_v.png",
+        "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_1_text-header--set-3_1_tablet_v.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_1_text-header--set-3_1_tablet_v.png",
-        "selector": ".text-header--set-3",
-        "fileName": "0_1_text-header--set-3_1_tablet_v.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_1_backstopjs-testbtnbtn-default_1_tablet_v.png",
+        "selector": "[backstopjs-test] .btn.btn-default",
+        "fileName": "0_1_backstopjs-testbtnbtn-default_1_tablet_v.png",
+        "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_2_btn-danger_1_tablet_v.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_2_btn-danger_1_tablet_v.png",
-        "selector": ".btn-danger",
-        "fileName": "0_2_btn-danger_1_tablet_v.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-secondary_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_2_backstopjs-testbtnbtn-secondary_1_tablet_v.png",
+        "selector": "[backstopjs-test] .btn.btn-secondary",
+        "fileName": "0_2_backstopjs-testbtnbtn-secondary_1_tablet_v.png",
+        "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_0_s_career-media_2_tablet_h.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_0_s_career-media_2_tablet_h.png",
-        "selector": ".s_career-media",
-        "fileName": "0_0_s_career-media_2_tablet_h.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_0_backstopjs-testbtn_2_tablet_h.png",
+        "selector": "[backstopjs-test] .btn",
+        "fileName": "0_0_backstopjs-testbtn_2_tablet_h.png",
+        "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_1_text-header--set-3_2_tablet_h.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_1_text-header--set-3_2_tablet_h.png",
-        "selector": ".text-header--set-3",
-        "fileName": "0_1_text-header--set-3_2_tablet_h.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_1_backstopjs-testbtnbtn-default_2_tablet_h.png",
+        "selector": "[backstopjs-test] .btn.btn-default",
+        "fileName": "0_1_backstopjs-testbtnbtn-default_2_tablet_h.png",
+        "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_2_btn-danger_2_tablet_h.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_2_btn-danger_2_tablet_h.png",
-        "selector": ".btn-danger",
-        "fileName": "0_2_btn-danger_2_tablet_h.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-secondary_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_2_backstopjs-testbtnbtn-secondary_2_tablet_h.png",
+        "selector": "[backstopjs-test] .btn.btn-secondary",
+        "fileName": "0_2_backstopjs-testbtnbtn-secondary_2_tablet_h.png",
+        "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_0_s_career-media_3_desktop.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_0_s_career-media_3_desktop.png",
-        "selector": ".s_career-media",
-        "fileName": "0_0_s_career-media_3_desktop.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_0_backstopjs-testbtn_3_desktop.png",
+        "selector": "[backstopjs-test] .btn",
+        "fileName": "0_0_backstopjs-testbtn_3_desktop.png",
+        "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_1_text-header--set-3_3_desktop.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_1_text-header--set-3_3_desktop.png",
-        "selector": ".text-header--set-3",
-        "fileName": "0_1_text-header--set-3_3_desktop.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_1_backstopjs-testbtnbtn-default_3_desktop.png",
+        "selector": "[backstopjs-test] .btn.btn-default",
+        "fileName": "0_1_backstopjs-testbtnbtn-default_3_desktop.png",
+        "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_2_btn-danger_3_desktop.png",
-        "test": "../../backstop_data/bitmaps_test/20160223-195222/0_2_btn-danger_3_desktop.png",
-        "selector": ".btn-danger",
-        "fileName": "0_2_btn-danger_3_desktop.png",
-        "label": "My Homepage"
+        "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-secondary_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160223-231211/0_2_backstopjs-testbtnbtn-secondary_3_desktop.png",
+        "selector": "[backstopjs-test] .btn.btn-secondary",
+        "fileName": "0_2_backstopjs-testbtnbtn-secondary_3_desktop.png",
+        "label": "UI Library - Generic"
       }
     ]
   },
-  "lastConfigHash": "12ff7d46672e7213e66a95d1e27fd10ee40a412e"
+  "lastConfigHash": "ef56f32d559dea05c13bec2b57feb0b673b755cd"
 }
