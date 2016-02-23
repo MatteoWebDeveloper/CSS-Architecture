@@ -23,11 +23,13 @@
     ],
     "scenarios": [
         {
-            "label": "UI Library",
+            "label": "UI Library - Generic",
             "url": "http://localhost:8080/ui-library-generic.html",
             "hideSelectors": [],
             "removeSelectors": [],
-            "selectors": [],
+            "selectors": [
+
+            ],
             "readyEvent": null,
             "delay": 500,
             "onReadyScript": null,
@@ -69,6 +71,17 @@
         {
             "label": "UI Library",
             "url": "http://localhost:8080/ui-library-trump.html",
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "selectors": [],
+            "readyEvent": null,
+            "delay": 500,
+            "onReadyScript": null,
+            "onBeforeScript": null
+        },
+        {
+            "label": "UI Library - Extra",
+            "url": "http://localhost:8080/ui-library-extra.html",
             "hideSelectors": [],
             "removeSelectors": [],
             "selectors": [],
