@@ -28,9 +28,9 @@
             "hideSelectors": [],
             "removeSelectors": [],
             "selectors": [
-                "[backstopjs-test] .btn",
-                "[backstopjs-test] .btn.btn-default",
-                "[backstopjs-test] .btn.btn-primary"
+                ".btn",
+                ".btn.btn-default",
+                ".btn.btn-primary"
             ],
             "readyEvent": null,
             "delay": 500,
