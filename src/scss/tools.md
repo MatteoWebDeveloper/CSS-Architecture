@@ -13,6 +13,7 @@
 * gulp-csso
 * gulp-cssnano
 * gulp-combine-mq
+* gulp-check
 
 ## Web Tool
 * http://cssstats.com/

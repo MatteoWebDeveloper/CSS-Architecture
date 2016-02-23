@@ -1,0 +1,107 @@
+{
+    "viewports": [
+        {
+            "name": "mobile",
+            "width": 320,
+            "height": 480
+        },
+        {
+            "name": "tablet_v",
+            "width": 768,
+            "height": 1024
+        },
+        {
+            "name": "tablet_h",
+            "width": 1024,
+            "height": 768
+        },
+        {
+            "name": "desktop",
+            "width": 1025,
+            "height": 768
+        }
+    ],
+    "scenarios": [
+        {
+            "label": "UI Library - Generic",
+            "url": "http://localhost:8080/ui-library-generic.html",
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "selectors": [
+                "[backstopjs-test] .btn",
+                "[backstopjs-test] .btn.btn-default",
+                "[backstopjs-test] .btn.btn-secondary"
+            ],
+            "readyEvent": null,
+            "delay": 500,
+            "onReadyScript": null,
+            "onBeforeScript": null
+        },
+        {
+            "label": "UI Library",
+            "url": "http://localhost:8080/ui-library-object.html",
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "selectors": [],
+            "readyEvent": null,
+            "delay": 500,
+            "onReadyScript": null,
+            "onBeforeScript": null
+        },
+        {
+            "label": "UI Library",
+            "url": "http://localhost:8080/ui-library-component.html",
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "selectors": [],
+            "readyEvent": null,
+            "delay": 500,
+            "onReadyScript": null,
+            "onBeforeScript": null
+        },
+        {
+            "label": "UI Library",
+            "url": "http://localhost:8080/ui-library-section.html",
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "selectors": [],
+            "readyEvent": null,
+            "delay": 500,
+            "onReadyScript": null,
+            "onBeforeScript": null
+        },
+        {
+            "label": "UI Library",
+            "url": "http://localhost:8080/ui-library-trump.html",
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "selectors": [],
+            "readyEvent": null,
+            "delay": 500,
+            "onReadyScript": null,
+            "onBeforeScript": null
+        },
+        {
+            "label": "UI Library - Extra",
+            "url": "http://localhost:8080/ui-library-extra.html",
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "selectors": [],
+            "readyEvent": null,
+            "delay": 500,
+            "onReadyScript": null,
+            "onBeforeScript": null
+        }
+    ],
+    "paths": {
+        "bitmaps_reference": "../../backstop_data/bitmaps_reference",
+        "bitmaps_test": "../../backstop_data/bitmaps_test",
+        "compare_data": "../../backstop_data/bitmaps_test/compare.json",
+        "casper_scripts": "../../backstop_data/casper_scripts"
+    },
+    "engine": "phantomjs",
+    "report": ["browser", "CLI"],
+    "cliExitOnFail": false,
+    "debug": false,
+    "port": 3001
+}
