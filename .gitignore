@@ -2,3 +2,4 @@
 bower_components/
 .DS_Store
 dist/
+backstop_data/
