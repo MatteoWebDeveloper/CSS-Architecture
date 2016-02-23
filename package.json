@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/MatteoWebDesigner/CSS-Architecture#readme",
   "dependencies": {
+    "backstopjs": "^1.1.0",
     "bower": "^1.6.9",
+    "casperjs": "^1.1.0-beta3",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
@@ -41,6 +43,7 @@
     "jshint": "^2.8.0",
     "lodash": "^4.5.0",
     "minimist": "^1.2.0",
+    "phantomjs": "^1.9.8",
     "run-sequence": "^1.1.5",
     "symdiff-css": "0.0.3",
     "symdiff-html": "0.0.2"

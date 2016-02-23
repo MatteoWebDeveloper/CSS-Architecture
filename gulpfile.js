@@ -179,7 +179,7 @@ gulp.task('js', function()
         .pipe(
             gulpif(isSourceMap(), sourcemaps.init())
         )
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(
             gulpif(isSourceMap(),sourcemaps.write())
         )

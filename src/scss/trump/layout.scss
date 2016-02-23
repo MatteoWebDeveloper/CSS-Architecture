@@ -26,6 +26,35 @@ $t_layout__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20p
     $property: 'padding';
     @include grid-spacing($property,$t_layout__padding-margin_grid)
 }
+.t_padding-vertical {
+    $property: 'padding-top','padding-bottom';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
+
+.t_padding-horizontal {
+    $property: 'padding-left','padding-right';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
+
+.t_padding-top {
+    $property: 'padding-top';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
+
+.t_padding-right {
+    $property: 'padding-right';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
+
+.t_padding-bottom {
+    $property: 'padding-bottom';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
+
+.t_padding-left {
+    $property: 'padding-left';
+    @include grid-spacing($property,$t_layout__padding-margin_grid)
+}
 /* end padding */
 
 /* group margin */
@@ -50,24 +79,24 @@ $t_layout__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20p
 }
 
 .t_margin-right {
-    $property: 'margin-top';
+    $property: 'margin-right';
     @include grid-spacing($property,$t_layout__padding-margin_grid)
 }
 
 .t_margin-bottom {
-    $property: 'margin-top';
+    $property: 'margin-bottom';
     @include grid-spacing($property,$t_layout__padding-margin_grid)
 }
 
 .t_margin-left {
-    $property: 'margin-top';
+    $property: 'margin-left';
     @include grid-spacing($property,$t_layout__padding-margin_grid)
 }
 /* end margin */
 
 /* group text-size */
 .t_text-size {
-    $property: 'padding';
+    $property: 'font-size';
     @include grid-spacing($property,$t_layout__font-size_grid)
 }
 /* end text-size */
