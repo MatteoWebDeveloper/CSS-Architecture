@@ -3,112 +3,112 @@
     "testPairs": [
       {
         "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_0_mobile.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_0_backstopjs-testbtn_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_0_backstopjs-testbtn_0_mobile.png",
         "selector": "[backstopjs-test] .btn",
         "fileName": "0_0_backstopjs-testbtn_0_mobile.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_0_mobile.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_1_backstopjs-testbtnbtn-default_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_1_backstopjs-testbtnbtn-default_0_mobile.png",
         "selector": "[backstopjs-test] .btn.btn-default",
         "fileName": "0_1_backstopjs-testbtnbtn-default_0_mobile.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-primary_0_mobile.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_2_backstopjs-testbtnbtn-primary_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_2_backstopjs-testbtnbtn-primary_0_mobile.png",
         "selector": "[backstopjs-test] .btn.btn-primary",
         "fileName": "0_2_backstopjs-testbtnbtn-primary_0_mobile.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testc_text-header_0_mobile.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_3_backstopjs-testc_text-header_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_3_backstopjs-testc_text-header_0_mobile.png",
         "selector": "[backstopjs-test] .c_text-header",
         "fileName": "0_3_backstopjs-testc_text-header_0_mobile.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_1_tablet_v.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_0_backstopjs-testbtn_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_0_backstopjs-testbtn_1_tablet_v.png",
         "selector": "[backstopjs-test] .btn",
         "fileName": "0_0_backstopjs-testbtn_1_tablet_v.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_1_tablet_v.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_1_backstopjs-testbtnbtn-default_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_1_backstopjs-testbtnbtn-default_1_tablet_v.png",
         "selector": "[backstopjs-test] .btn.btn-default",
         "fileName": "0_1_backstopjs-testbtnbtn-default_1_tablet_v.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-primary_1_tablet_v.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_2_backstopjs-testbtnbtn-primary_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_2_backstopjs-testbtnbtn-primary_1_tablet_v.png",
         "selector": "[backstopjs-test] .btn.btn-primary",
         "fileName": "0_2_backstopjs-testbtnbtn-primary_1_tablet_v.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testc_text-header_1_tablet_v.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_3_backstopjs-testc_text-header_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_3_backstopjs-testc_text-header_1_tablet_v.png",
         "selector": "[backstopjs-test] .c_text-header",
         "fileName": "0_3_backstopjs-testc_text-header_1_tablet_v.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_2_tablet_h.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_0_backstopjs-testbtn_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_0_backstopjs-testbtn_2_tablet_h.png",
         "selector": "[backstopjs-test] .btn",
         "fileName": "0_0_backstopjs-testbtn_2_tablet_h.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_2_tablet_h.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_1_backstopjs-testbtnbtn-default_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_1_backstopjs-testbtnbtn-default_2_tablet_h.png",
         "selector": "[backstopjs-test] .btn.btn-default",
         "fileName": "0_1_backstopjs-testbtnbtn-default_2_tablet_h.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-primary_2_tablet_h.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_2_backstopjs-testbtnbtn-primary_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_2_backstopjs-testbtnbtn-primary_2_tablet_h.png",
         "selector": "[backstopjs-test] .btn.btn-primary",
         "fileName": "0_2_backstopjs-testbtnbtn-primary_2_tablet_h.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testc_text-header_2_tablet_h.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_3_backstopjs-testc_text-header_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_3_backstopjs-testc_text-header_2_tablet_h.png",
         "selector": "[backstopjs-test] .c_text-header",
         "fileName": "0_3_backstopjs-testc_text-header_2_tablet_h.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_3_desktop.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_0_backstopjs-testbtn_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_0_backstopjs-testbtn_3_desktop.png",
         "selector": "[backstopjs-test] .btn",
         "fileName": "0_0_backstopjs-testbtn_3_desktop.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_3_desktop.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_1_backstopjs-testbtnbtn-default_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_1_backstopjs-testbtnbtn-default_3_desktop.png",
         "selector": "[backstopjs-test] .btn.btn-default",
         "fileName": "0_1_backstopjs-testbtnbtn-default_3_desktop.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-primary_3_desktop.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_2_backstopjs-testbtnbtn-primary_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_2_backstopjs-testbtnbtn-primary_3_desktop.png",
         "selector": "[backstopjs-test] .btn.btn-primary",
         "fileName": "0_2_backstopjs-testbtnbtn-primary_3_desktop.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testc_text-header_3_desktop.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-101502/0_3_backstopjs-testc_text-header_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_3_backstopjs-testc_text-header_3_desktop.png",
         "selector": "[backstopjs-test] .c_text-header",
         "fileName": "0_3_backstopjs-testc_text-header_3_desktop.png",
         "label": "UI Library - Generic"

@@ -13,6 +13,7 @@ var open            = require('gulp-open');
 var livereload      = require('gulp-livereload');
 var sourcemaps      = require('gulp-sourcemaps');
 var htmlmin         = require('gulp-htmlmin');
+var jade            = require('gulp-jade');
 var sass            = require('gulp-sass');
 var autoprefixer    = require('gulp-autoprefixer');
 var csslint         = require('gulp-csslint');
@@ -52,6 +53,16 @@ gulp.task('html', function()
     return gulp
         .src(config.htmlFiles)
         .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest(config.htmlDist))
+        .pipe(livereload());
+});
+
+
+gulp.task('jade', function()
+{
+    return gulp.src(config.jadeFiles)
+        .pipe(jade())
+        //.pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(config.htmlDist))
         .pipe(livereload());
 });
@@ -220,7 +231,7 @@ gulp.task('default', function ()
 {
     runSequence(
         'clean',
-        ['fonts','html','cssVendor','css','jsVendor','js'],
+        ['fonts','html','jade','cssVendor','css','jsVendor','js'],
         ['css-deprecated'],
         'connect','watch'
     );

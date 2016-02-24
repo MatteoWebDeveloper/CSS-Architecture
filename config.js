@@ -5,6 +5,7 @@ var config = {
     fontFiles :    "src/fonts/**/*",
     fontDist :    "dist/fonts/",
     htmlFiles:    "src/pages/*.html",
+    jadeFiles:    "src/views/pages/*.jade",
     htmlDist:     "dist/",
     sassIndex:    "src/scss/main.scss",
     sassFiles:    "src/scss/**/*.scss",

@@ -19,11 +19,8 @@
 * `gulp --sm`
 
 ## test
-go to backstopjs module
-> cd /node_modules/backstopjs/
-
 this command create list of image reference
-> gulp reference
+> (node_modules/backstopjs/; gulp reference)
 
 this task is comparing your reference with the current UI
-> gulp test
+> (node_modules/backstopjs/; gulp test)
