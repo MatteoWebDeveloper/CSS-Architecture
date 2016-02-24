@@ -24,7 +24,7 @@
     "scenarios": [
         {
             "label": "UI Library - Generic",
-            "url": "http://localhost:8080/ui-library-generic.html",
+            "url": "http://localhost:8080/ui-library/generic.html",
             "hideSelectors": [],
             "removeSelectors": [],
             "selectors": [
@@ -32,6 +32,30 @@
                 "[backstopjs-test] .btn.btn-default",
                 "[backstopjs-test] .btn.btn-primary",
                 "[backstopjs-test] .c_text-header"
+            ],
+            "readyEvent": null,
+            "delay": 500,
+            "onReadyScript": null,
+            "onBeforeScript": null
+        },{
+            "label": "UI Library - Component",
+            "url": "http://localhost:8080/ui-library/component.html",
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "selectors": [
+                "[backstopjs-test] .c_text-header"
+            ],
+            "readyEvent": null,
+            "delay": 500,
+            "onReadyScript": null,
+            "onBeforeScript": null
+        },{
+            "label": "UI Library - Extra",
+            "url": "http://localhost:8080/ui-library/extra.html",
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "selectors": [
+
             ],
             "readyEvent": null,
             "delay": 500,
@@ -47,7 +71,7 @@
     },
     "engine": "slimerjs",
     "report": ["browser", "CLI"],
-    "cliExitOnFail": false,
-    "debug": false,
+    "cliExitOnFail": true,
+    "debug": true,
     "port": 3001
 }

@@ -52,7 +52,7 @@ gulp.task('html', function()
 {
     return gulp
         .src(config.htmlFiles)
-        .pipe(htmlmin({collapseWhitespace: true}))
+        //.pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(config.htmlDist))
         .pipe(livereload());
 });
@@ -60,9 +60,8 @@ gulp.task('html', function()
 
 gulp.task('jade', function()
 {
-    return gulp.src(config.jadeFiles)
-        .pipe(jade())
-        //.pipe(htmlmin({collapseWhitespace: true}))
+    return gulp.src(config.jadePageFiles)
+        .pipe(jade({pretty: true}))
         .pipe(gulp.dest(config.htmlDist))
         .pipe(livereload());
 });
