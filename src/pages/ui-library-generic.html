@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>CSS Architecture - UI Library - Trump</title>
         <!-- <link rel="stylesheet" href="css/vendor.css" media="screen"> -->
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/main.css" media="screen"/>
         <style>.btn { /*color:red;*/ }</style>
     </head>
@@ -21,6 +22,8 @@
                 <!-- List elements -->
                 <h2>Generic</h2>
 
+                <hr/>
+
                 <!-- start test -->
                 <h3>.btn</h3>
 
@@ -34,18 +37,36 @@
                     </code>
                 </pre>
 
-                <div class="t_margin-bottom-xs-4">
+                <div class="t_margin-bottom-xs-4" backstopjs-test>
                     <button class="btn">button</button>
                 </div>
 
-                <div class="t_margin-bottom-xs-4">
+                <div class="t_margin-bottom-xs-4" backstopjs-test>
                     <button class="btn btn-default">button</button>
                 </div>
 
-                <div class="t_margin-bottom-xs-4">
+                <div class="t_margin-bottom-xs-4" backstopjs-test>
                     <button class="btn btn-primary">button</button>
                 </div>
                 <!-- end test -->
+
+                <hr/>
+
+                <!-- start test -->
+                <h3>.c_text-header</h3>
+
+                <pre class="pre-scrollable t_padding-xs-0 t_margin-xs-0 t_margin-bottom-xs-4">
+                    <code class="hljs html  t_padding-xs-0 t_margin-xs-0">
+                        <h1 class="c_text-header">c_text-header</h1>
+                    </code>
+                </pre>
+
+                <div class="t_margin-bottom-xs-4" backstopjs-test>
+                    <h1 class="c_text-header">c_text-header</h1>
+                </div>
+                <!-- end test -->
+
+                <hr/>
 
             </section>
         </main>
