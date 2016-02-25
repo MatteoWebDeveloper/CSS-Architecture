@@ -3,12 +3,11 @@ Depending what you have done on the CSS you have different test:
 
 
 ## Code review
-CSS change must be code reviewed, so reviewer are aware of new changes/additions.
+CSS changes must be code reviewed, so reviewer are aware of new changes/additions.
 
 
 ## Testing quality
-Sometime review some CSS file, and check if the clarity of the css is right.
-If It looks like a big mess you need to improve it :). Use the tools listed to asses if we have potential CSS code smell or inefficiency.
+Sometime check a couple of CSS files, If It is looks like an explosion of classes without any sense, it means you need to tidy up and improve your code. The following tools help asses if you have invalid css, unused classes and potential CSS code smell or inefficiency.
 Tools:
 * gulp css-lint,
 * gulp css-unused,
@@ -17,26 +16,30 @@ Tools:
 
 
 ## Testing specificity
-Specificity change affect class composition. If you changed the location or specificity of a class, you need to test every place is used to make sure is not overwriting some properties.
-It something you need to test manually because we cannot automatically test every composition combination.
-In theory if the architecture has the right code organization, you do not have the need to change specificity of a class.
-In general change the nature of a certain class is dangerous and it require testing.
+Specificity is an important problem to tackle in CSS.
+It is important to have a good code organization and single classes to avoid painful specificity war! Single classes help reuse other classes and have a sane css inheritance. Use the tool listed to sort it out specificity peak.
+
+Specificity change affect class composition.
+If you changed the location or specificity of a class, you need to test every place is used to make sure is not overwriting some properties. It is something you have to test manually because we cannot automatically test every possible composition combination.
+
+If the code base has the right architecture, you do not need to rise CSS specificity of a certain class.
+
 Tools:
 * [specicTool 1](https://jonassebastianohlsson.com/specificity-graph/),
 * [specicTool 2](https://decadecity.net/sprue/css-specificity-graph)
 
 
 ## Testing deprecation
-'gulp css-deprecation' is gulp task which check a list of css classes deprecated. If it finds one will output the message on the console specifying .
+'gulp css-deprecation' is gulp task which check a collection of css classes deprecated. If it finds one will output the message on the console specifying where the problem is and suggesting a solution.
 Tools:
 * gulp css-deprecation (is a task)
 
 
 ## Visual Regression Test
 The purpose of this test is to check every single UI component has kept is visual integrity.
-The test should check a list of UI component but we can have special test to check chuck of UI if they are particular important for the business.
+The test should check a list of UI but we can have special test for important block of UI components if they are important for the business.
 
-Node: This test does not check specificity/composition problem. That kind of problem need to be checked manually. Use visual regression test as a kind of unit test.
+Note: This test does not check specificity/composition problem. That kind of problem need to be checked manually. Use visual regression test as a kind of unit test.
 
 Tools:
 * BackStopJs
@@ -47,10 +50,3 @@ this command create list of image reference
 
 this task is comparing your reference with the current UI
 > (node_modules/backstopjs/; gulp test)
-
-
-## Css Visual Regression test options:
-* [Backstopjs](https://github.com/garris/BackstopJS)
-* [PhantomCSS](https://github.com/Huddle/PhantomCSS)
-* [Success](http://succss.ifzenelse.net/index.html)
-* [CSS Critic](https://github.com/cburgmer/csscritic)

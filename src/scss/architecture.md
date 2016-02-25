@@ -56,13 +56,6 @@ CSS Classes shall be mobile first and give the name of the css file. It is a goo
 
 vanilla CSS
 ```css
-/*
-<div class="c_component c_component--modifier">
-    <div class="c_component__elment"></div>
-    <div class="c_component__elment c_component__elment--modifier"></div>
-    <div class="c_component__elment is-active"></div> // triggered by js
-</div>
-*/
 .c_component {}                     /* block */
 .c_component--modifier {}           /* block modifier */
 .c_component.is-active {}           /* block state */
@@ -87,6 +80,13 @@ $screen__media_tablet_desktop:     "(min-width:730px)";
 $screen__media_desktop:            "(min-width:1025px)";
 
 // component/nav.scss
+/*
+<div class="c_component c_component--modifier">
+    <div class="c_component__elment"></div>
+    <div class="c_component__elment c_component__elment--modifier"></div>
+    <div class="c_component__elment is-active"></div> // triggered by js
+</div>
+*/
 $c_component__variable: 'value';   // public variable
 .c_component {                     // block
     $variable: 'value';            // local variable

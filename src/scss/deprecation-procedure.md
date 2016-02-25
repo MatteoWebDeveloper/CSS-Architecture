@@ -1,4 +1,4 @@
-# Refactoring and deprecation procedure
+# Deprecation procedure
 
 Refactoring and deprecation are an important procedure to optimize and maintain your codebase.
 The procedure consist in the following steps:

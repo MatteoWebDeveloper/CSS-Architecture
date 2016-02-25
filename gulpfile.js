@@ -16,11 +16,12 @@ var htmlmin         = require('gulp-htmlmin');
 var jade            = require('gulp-jade');
 var sass            = require('gulp-sass');
 var autoprefixer    = require('gulp-autoprefixer');
+var cssnano         = require('gulp-cssnano');
+var combineMq       = require('gulp-combine-mq');
 var csslint         = require('gulp-csslint');
 var symdiff         = require('gulp-symdiff');
 var symdiffHtml     = require('symdiff-html');
 var symdiffCss      = require('symdiff-css');
-var minifyCss       = require('gulp-minify-css');
 var concat          = require('gulp-concat');
 var browserify      = require('gulp-browserify');
 var jshint          = require('gulp-jshint');
@@ -93,11 +94,22 @@ gulp.task('css', function()
             browsers: ['last 2 versions'],
             cascade: false
         }))
+        .pipe(combineMq({beautify: false}))
+        .pipe(cssnano())
         .pipe(
             gulpif(isSourceMap(),sourcemaps.write())
         )
         .pipe(gulp.dest(config.cssDist))
         .pipe(livereload());
+});
+
+
+// I cannot add css-lint because output error
+gulp.task('css-lint', function ()
+{
+    gulp.src(config.cssDistFiles)
+    .pipe(csslint(config.csslint))
+    .pipe(csslint.reporter());
 });
 
 
@@ -157,14 +169,6 @@ gulp.task('css-unused', function ()
         css: [symdiffCss],               // list all css plugins
         ignore: config.unusedCss.ignore  // classes to ignore
     }));
-});
-
-// I cannot add css-lint because output error
-gulp.task('css-lint', function ()
-{
-    gulp.src(config.cssDistFiles)
-    .pipe(csslint(config.csslint))
-    .pipe(csslint.reporter());
 });
 
 
