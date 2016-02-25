@@ -1,0 +1,51 @@
+extends ../../templates/layout.jade
+
+block title
+    | CSS Architecture - UI Library - Trump
+
+block header
+    div(class='container')
+        h1 UI Library - Trump
+
+block content
+    section(class="container")
+        article
+            
+            a(href='index.html',class='margin-bottom-xs-4')
+                | <i class="icon-back"></i>Back to index
+
+            hr/
+            
+            // code location
+            h2 trump/layout.scss
+
+
+            // UI title
+            h3 .t_width
+    
+            // start code reference
+            pre(class="pre-scrollable t_padding-xs-0 t_margin-xs-0 t_margin-bottom-xs-4")
+                span(class="t_padding-left-xs-4") code:
+                code(class="hljs html  t_padding-xs-0 t_margin-xs-0")
+                    | 
+                    |    <div class="t_width-xs-0  t_height-xs-2  t_bgcolor-gray-base"></div> is zero width
+                    |    <div class="t_width-xs-1  t_height-xs-2  t_bgcolor-gray-base"></div>
+                    |    <div class="t_width-xs-2  t_height-xs-2  t_bgcolor-gray-base"></div>
+                    |    <div class="t_width-xs-3  t_height-xs-2  t_bgcolor-gray-base"></div>
+                    | 
+            // end code reference
+            
+            // start test
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                div(class="t_width-xs-0  t_height-xs-2  t_bgcolor-gray-base")
+                | is zero width
+                
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                div(class="t_width-xs-1  t_height-xs-2  t_bgcolor-gray-base")
+                
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                div(class="t_width-xs-2  t_height-xs-2  t_bgcolor-gray-base")
+                
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                div(class="t_width-xs-3  t_height-xs-2  t_bgcolor-gray-base")
+            // end test

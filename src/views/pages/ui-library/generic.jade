@@ -1,0 +1,73 @@
+extends ../../templates/layout.jade
+
+block title
+    | CSS Architecture - UI Library - Generic
+
+block header
+    div(class='container')
+        h1 UI Library - Generic
+
+block content
+    section(class="container")
+        article
+            
+            a(href='index.html',class='margin-bottom-xs-4')
+                | <i class="icon-back"></i>Back to index
+
+            hr/
+            
+            // code location
+            h2 bootstrap-sass/buttons.scss
+
+            // UI title
+            h3 .btn 
+            
+            // start code reference
+            pre(class="pre-scrollable t_padding-xs-0 t_margin-xs-0 t_margin-bottom-xs-4")
+                span(class="t_padding-left-xs-4") code:
+                code(class="hljs html  t_padding-xs-0 t_margin-xs-0")
+                    | 
+                    |    <button class="btn">text-node</button>
+                    |    <button class="btn btn-default">text-node</button>
+                    |    <button class="btn btn-primary">text-node</button>
+                    | 
+            // end code reference
+            
+            // start test
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                button(class="btn") button
+
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                button(class="btn btn-default") button
+
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                button(class="btn btn-primary") button
+            // end test
+            
+            
+            // UI title
+            h3 .panel 
+            
+            // start code reference
+            pre(class="pre-scrollable t_padding-xs-0 t_margin-xs-0 t_margin-bottom-xs-4")
+                span(class="t_padding-left-xs-4") code:
+                code(class="hljs html  t_padding-xs-0 t_margin-xs-0")
+                    | 
+                    |    <div class="panel panel-default">
+                    |    <div class="panel-heading">Panel heading without title</div>
+                    |        <div class="panel-body">
+                    |            Basic panel example
+                    |        </div>
+                    |    </div>
+                    | 
+            // end code reference
+            
+            // start test
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                div(class="panel panel-default")
+                    div(class="panel-heading") Panel heading without title
+                    div(class="panel-body")
+                        | Basic panel example
+            // end test
+
+            hr/

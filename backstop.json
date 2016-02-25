@@ -31,7 +31,8 @@
                 "[backstopjs-test] .btn",
                 "[backstopjs-test] .btn.btn-default",
                 "[backstopjs-test] .btn.btn-primary",
-                "[backstopjs-test] .c_text-header"
+
+                "[backstopjs-test] .panel.panel-default",
             ],
             "readyEvent": null,
             "delay": 500,
