@@ -13,6 +13,9 @@
 }
 
 .t_color-gray-base { @include build-color($gray-base,'color'); }
+.t_color-gray { @include build-color($gray,'color'); }
+.t_color-gray-lighter { color: $gray-lighter; }
 .t_color-red { color: $theme__color-red; }
 
 .t_bgcolor-gray-base { background-color: $gray-base; }
+.t_bgcolor-gray { background-color: $gray; }

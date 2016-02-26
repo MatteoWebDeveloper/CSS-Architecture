@@ -39,16 +39,16 @@ var config = {
         'zero-units': false
     },
     templates: [
-        'src/pages/*.html',
+        'dist/**/*.html',
         'src/js/**/*.js'
     ],
-    deprecationEndDate: '2016, 1, 20', // (yyyy, mm, dd) keep in mind month start from 0
+    deprecationEndDate: '2016, 1, 28', // (yyyy, mm, dd) keep in mind month start from 0
     deprecatedClasses : [
-        {
-            regex: /(| |'|")oldClass(| |'|")/,
-            oldClass: '.oldClass',
-            newClass: '.newClass'
-        }
+        // {
+        //     regex: /(| |'|")oldClass(| |'|")/,
+        //     oldClass: '.oldClass',
+        //     newClass: '.newClass'
+        // }
     ]
 };
 

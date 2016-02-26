@@ -19,7 +19,6 @@ block content
             // code location
             h2 trump/layout.scss
 
-
             // UI title
             h3 .t_width
     
@@ -49,3 +48,40 @@ block content
             div(class="t_margin-bottom-xs-4",backstopjs-test)
                 div(class="t_width-xs-3  t_height-xs-2  t_bgcolor-gray-base")
             // end test
+            
+            
+            // UI title
+            h3 .t_padding
+    
+            // start code reference
+            pre(class="pre-scrollable t_padding-xs-0 t_margin-xs-0 t_margin-bottom-xs-4")
+                span(class="t_padding-left-xs-4") code:
+                code(class="hljs html  t_padding-xs-0 t_margin-xs-0")
+                    | 
+                    |    <span class="t_padding-xs-0 t_inline-block t_color-gray-lighter t_bgcolor-gray">text with padding</span>
+                    |    <span class="t_padding-xs-1 t_inline-block t_color-gray-lighter t_bgcolor-gray">text with padding</span>
+                    |    <span class="t_padding-xs-2 t_inline-block t_color-gray-lighter t_bgcolor-gray">text with padding</span>
+                    |    <span class="t_padding-xs-3 t_inline-block t_color-gray-lighter t_bgcolor-gray">text with padding</span>
+                    | 
+            // end code reference
+            
+            // start test
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                span(class="t_padding-xs-0 t_inline-block t_color-gray-lighter t_bgcolor-gray")
+                    | text with padding
+                
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                span(class="t_padding-xs-1 t_inline-block t_color-gray-lighter t_bgcolor-gray")
+                    | text with padding
+                    
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                span(class="t_padding-xs-2 t_inline-block t_color-gray-lighter t_bgcolor-gray")
+                    | text with padding
+                
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                span(class="t_padding-xs-3 t_inline-block t_color-gray-lighter t_bgcolor-gray")
+                    | text with padding
+            // end test
+            
+            
+            hr/

@@ -33,12 +33,16 @@
                 "[backstopjs-test] .btn.btn-primary",
 
                 "[backstopjs-test] .panel.panel-default",
+                "[backstopjs-test] .panel.panel-primary",
+
+                "[backstopjs-test] .pagination"
             ],
             "readyEvent": null,
             "delay": 500,
             "onReadyScript": null,
             "onBeforeScript": null
-        },{
+        },
+        {
             "label": "UI Library - Component",
             "url": "http://localhost:8080/ui-library/component.html",
             "hideSelectors": [],
@@ -50,13 +54,36 @@
             "delay": 500,
             "onReadyScript": null,
             "onBeforeScript": null
-        },{
+        },
+        {
+            "label": "UI Library - Trump",
+            "url": "http://localhost:8080/ui-library/trump.html",
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "selectors": [
+                "[backstopjs-test] .t_width-xs-0",
+                "[backstopjs-test] .t_width-xs-1",
+                "[backstopjs-test] .t_width-xs-2",
+                "[backstopjs-test] .t_width-xs-3",
+
+                "[backstopjs-test] .t_padding-xs-0",
+                "[backstopjs-test] .t_padding-xs-1",
+                "[backstopjs-test] .t_padding-xs-2",
+                "[backstopjs-test] .t_padding-xs-3"
+            ],
+            "readyEvent": null,
+            "delay": 500,
+            "onReadyScript": null,
+            "onBeforeScript": null
+        },
+        {
             "label": "UI Library - Extra",
             "url": "http://localhost:8080/ui-library/extra.html",
             "hideSelectors": [],
             "removeSelectors": [],
             "selectors": [
-
+                "[backstopjs-test] [backstopjs-test-homepage-article-tile]",
+                "[backstopjs-test] [backstopjs-test-career-job-alert]"
             ],
             "readyEvent": null,
             "delay": 500,
@@ -72,7 +99,7 @@
     },
     "engine": "slimerjs",
     "report": ["browser", "CLI"],
-    "cliExitOnFail": true,
-    "debug": true,
+    "cliExitOnFail": false,
+    "debug": false,
     "port": 3001
 }

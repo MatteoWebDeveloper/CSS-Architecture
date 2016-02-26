@@ -3,117 +3,481 @@
     "testPairs": [
       {
         "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_0_mobile.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_0_backstopjs-testbtn_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_0_backstopjs-testbtn_0_mobile.png",
         "selector": "[backstopjs-test] .btn",
         "fileName": "0_0_backstopjs-testbtn_0_mobile.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_0_mobile.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_1_backstopjs-testbtnbtn-default_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_1_backstopjs-testbtnbtn-default_0_mobile.png",
         "selector": "[backstopjs-test] .btn.btn-default",
         "fileName": "0_1_backstopjs-testbtnbtn-default_0_mobile.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-primary_0_mobile.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_2_backstopjs-testbtnbtn-primary_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_2_backstopjs-testbtnbtn-primary_0_mobile.png",
         "selector": "[backstopjs-test] .btn.btn-primary",
         "fileName": "0_2_backstopjs-testbtnbtn-primary_0_mobile.png",
         "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testc_text-header_0_mobile.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_3_backstopjs-testc_text-header_0_mobile.png",
-        "selector": "[backstopjs-test] .c_text-header",
-        "fileName": "0_3_backstopjs-testc_text-header_0_mobile.png",
+        "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testpanelpanel-default_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_3_backstopjs-testpanelpanel-default_0_mobile.png",
+        "selector": "[backstopjs-test] .panel.panel-default",
+        "fileName": "0_3_backstopjs-testpanelpanel-default_0_mobile.png",
+        "label": "UI Library - Generic"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_4_backstopjs-testpanelpanel-primary_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_4_backstopjs-testpanelpanel-primary_0_mobile.png",
+        "selector": "[backstopjs-test] .panel.panel-primary",
+        "fileName": "0_4_backstopjs-testpanelpanel-primary_0_mobile.png",
+        "label": "UI Library - Generic"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_5_backstopjs-testpagination_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_5_backstopjs-testpagination_0_mobile.png",
+        "selector": "[backstopjs-test] .pagination",
+        "fileName": "0_5_backstopjs-testpagination_0_mobile.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_1_tablet_v.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_0_backstopjs-testbtn_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_0_backstopjs-testbtn_1_tablet_v.png",
         "selector": "[backstopjs-test] .btn",
         "fileName": "0_0_backstopjs-testbtn_1_tablet_v.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_1_tablet_v.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_1_backstopjs-testbtnbtn-default_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_1_backstopjs-testbtnbtn-default_1_tablet_v.png",
         "selector": "[backstopjs-test] .btn.btn-default",
         "fileName": "0_1_backstopjs-testbtnbtn-default_1_tablet_v.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-primary_1_tablet_v.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_2_backstopjs-testbtnbtn-primary_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_2_backstopjs-testbtnbtn-primary_1_tablet_v.png",
         "selector": "[backstopjs-test] .btn.btn-primary",
         "fileName": "0_2_backstopjs-testbtnbtn-primary_1_tablet_v.png",
         "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testc_text-header_1_tablet_v.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_3_backstopjs-testc_text-header_1_tablet_v.png",
-        "selector": "[backstopjs-test] .c_text-header",
-        "fileName": "0_3_backstopjs-testc_text-header_1_tablet_v.png",
+        "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testpanelpanel-default_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_3_backstopjs-testpanelpanel-default_1_tablet_v.png",
+        "selector": "[backstopjs-test] .panel.panel-default",
+        "fileName": "0_3_backstopjs-testpanelpanel-default_1_tablet_v.png",
+        "label": "UI Library - Generic"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_4_backstopjs-testpanelpanel-primary_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_4_backstopjs-testpanelpanel-primary_1_tablet_v.png",
+        "selector": "[backstopjs-test] .panel.panel-primary",
+        "fileName": "0_4_backstopjs-testpanelpanel-primary_1_tablet_v.png",
+        "label": "UI Library - Generic"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_5_backstopjs-testpagination_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_5_backstopjs-testpagination_1_tablet_v.png",
+        "selector": "[backstopjs-test] .pagination",
+        "fileName": "0_5_backstopjs-testpagination_1_tablet_v.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_2_tablet_h.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_0_backstopjs-testbtn_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_0_backstopjs-testbtn_2_tablet_h.png",
         "selector": "[backstopjs-test] .btn",
         "fileName": "0_0_backstopjs-testbtn_2_tablet_h.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_2_tablet_h.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_1_backstopjs-testbtnbtn-default_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_1_backstopjs-testbtnbtn-default_2_tablet_h.png",
         "selector": "[backstopjs-test] .btn.btn-default",
         "fileName": "0_1_backstopjs-testbtnbtn-default_2_tablet_h.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-primary_2_tablet_h.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_2_backstopjs-testbtnbtn-primary_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_2_backstopjs-testbtnbtn-primary_2_tablet_h.png",
         "selector": "[backstopjs-test] .btn.btn-primary",
         "fileName": "0_2_backstopjs-testbtnbtn-primary_2_tablet_h.png",
         "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testc_text-header_2_tablet_h.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_3_backstopjs-testc_text-header_2_tablet_h.png",
-        "selector": "[backstopjs-test] .c_text-header",
-        "fileName": "0_3_backstopjs-testc_text-header_2_tablet_h.png",
+        "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testpanelpanel-default_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_3_backstopjs-testpanelpanel-default_2_tablet_h.png",
+        "selector": "[backstopjs-test] .panel.panel-default",
+        "fileName": "0_3_backstopjs-testpanelpanel-default_2_tablet_h.png",
+        "label": "UI Library - Generic"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_4_backstopjs-testpanelpanel-primary_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_4_backstopjs-testpanelpanel-primary_2_tablet_h.png",
+        "selector": "[backstopjs-test] .panel.panel-primary",
+        "fileName": "0_4_backstopjs-testpanelpanel-primary_2_tablet_h.png",
+        "label": "UI Library - Generic"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_5_backstopjs-testpagination_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_5_backstopjs-testpagination_2_tablet_h.png",
+        "selector": "[backstopjs-test] .pagination",
+        "fileName": "0_5_backstopjs-testpagination_2_tablet_h.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_0_backstopjs-testbtn_3_desktop.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_0_backstopjs-testbtn_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_0_backstopjs-testbtn_3_desktop.png",
         "selector": "[backstopjs-test] .btn",
         "fileName": "0_0_backstopjs-testbtn_3_desktop.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_1_backstopjs-testbtnbtn-default_3_desktop.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_1_backstopjs-testbtnbtn-default_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_1_backstopjs-testbtnbtn-default_3_desktop.png",
         "selector": "[backstopjs-test] .btn.btn-default",
         "fileName": "0_1_backstopjs-testbtnbtn-default_3_desktop.png",
         "label": "UI Library - Generic"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_2_backstopjs-testbtnbtn-primary_3_desktop.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_2_backstopjs-testbtnbtn-primary_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_2_backstopjs-testbtnbtn-primary_3_desktop.png",
         "selector": "[backstopjs-test] .btn.btn-primary",
         "fileName": "0_2_backstopjs-testbtnbtn-primary_3_desktop.png",
         "label": "UI Library - Generic"
       },
       {
-        "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testc_text-header_3_desktop.png",
-        "test": "../../backstop_data/bitmaps_test/20160224-121204/0_3_backstopjs-testc_text-header_3_desktop.png",
-        "selector": "[backstopjs-test] .c_text-header",
-        "fileName": "0_3_backstopjs-testc_text-header_3_desktop.png",
+        "reference": "../../backstop_data/bitmaps_reference/0_3_backstopjs-testpanelpanel-default_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_3_backstopjs-testpanelpanel-default_3_desktop.png",
+        "selector": "[backstopjs-test] .panel.panel-default",
+        "fileName": "0_3_backstopjs-testpanelpanel-default_3_desktop.png",
         "label": "UI Library - Generic"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_4_backstopjs-testpanelpanel-primary_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_4_backstopjs-testpanelpanel-primary_3_desktop.png",
+        "selector": "[backstopjs-test] .panel.panel-primary",
+        "fileName": "0_4_backstopjs-testpanelpanel-primary_3_desktop.png",
+        "label": "UI Library - Generic"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_5_backstopjs-testpagination_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/0_5_backstopjs-testpagination_3_desktop.png",
+        "selector": "[backstopjs-test] .pagination",
+        "fileName": "0_5_backstopjs-testpagination_3_desktop.png",
+        "label": "UI Library - Generic"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/1_0_backstopjs-testc_text-header_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/1_0_backstopjs-testc_text-header_0_mobile.png",
+        "selector": "[backstopjs-test] .c_text-header",
+        "fileName": "1_0_backstopjs-testc_text-header_0_mobile.png",
+        "label": "UI Library - Component"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/1_0_backstopjs-testc_text-header_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/1_0_backstopjs-testc_text-header_1_tablet_v.png",
+        "selector": "[backstopjs-test] .c_text-header",
+        "fileName": "1_0_backstopjs-testc_text-header_1_tablet_v.png",
+        "label": "UI Library - Component"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/1_0_backstopjs-testc_text-header_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/1_0_backstopjs-testc_text-header_2_tablet_h.png",
+        "selector": "[backstopjs-test] .c_text-header",
+        "fileName": "1_0_backstopjs-testc_text-header_2_tablet_h.png",
+        "label": "UI Library - Component"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/1_0_backstopjs-testc_text-header_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/1_0_backstopjs-testc_text-header_3_desktop.png",
+        "selector": "[backstopjs-test] .c_text-header",
+        "fileName": "1_0_backstopjs-testc_text-header_3_desktop.png",
+        "label": "UI Library - Component"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_0_backstopjs-testt_width-xs-0_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_0_backstopjs-testt_width-xs-0_0_mobile.png",
+        "selector": "[backstopjs-test] .t_width-xs-0",
+        "fileName": "2_0_backstopjs-testt_width-xs-0_0_mobile.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_1_backstopjs-testt_width-xs-1_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_1_backstopjs-testt_width-xs-1_0_mobile.png",
+        "selector": "[backstopjs-test] .t_width-xs-1",
+        "fileName": "2_1_backstopjs-testt_width-xs-1_0_mobile.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_2_backstopjs-testt_width-xs-2_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_2_backstopjs-testt_width-xs-2_0_mobile.png",
+        "selector": "[backstopjs-test] .t_width-xs-2",
+        "fileName": "2_2_backstopjs-testt_width-xs-2_0_mobile.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_3_backstopjs-testt_width-xs-3_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_3_backstopjs-testt_width-xs-3_0_mobile.png",
+        "selector": "[backstopjs-test] .t_width-xs-3",
+        "fileName": "2_3_backstopjs-testt_width-xs-3_0_mobile.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_4_backstopjs-testt_padding-xs-0_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_4_backstopjs-testt_padding-xs-0_0_mobile.png",
+        "selector": "[backstopjs-test] .t_padding-xs-0",
+        "fileName": "2_4_backstopjs-testt_padding-xs-0_0_mobile.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_5_backstopjs-testt_padding-xs-1_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_5_backstopjs-testt_padding-xs-1_0_mobile.png",
+        "selector": "[backstopjs-test] .t_padding-xs-1",
+        "fileName": "2_5_backstopjs-testt_padding-xs-1_0_mobile.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_6_backstopjs-testt_padding-xs-2_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_6_backstopjs-testt_padding-xs-2_0_mobile.png",
+        "selector": "[backstopjs-test] .t_padding-xs-2",
+        "fileName": "2_6_backstopjs-testt_padding-xs-2_0_mobile.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_7_backstopjs-testt_padding-xs-3_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_7_backstopjs-testt_padding-xs-3_0_mobile.png",
+        "selector": "[backstopjs-test] .t_padding-xs-3",
+        "fileName": "2_7_backstopjs-testt_padding-xs-3_0_mobile.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_0_backstopjs-testt_width-xs-0_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_0_backstopjs-testt_width-xs-0_1_tablet_v.png",
+        "selector": "[backstopjs-test] .t_width-xs-0",
+        "fileName": "2_0_backstopjs-testt_width-xs-0_1_tablet_v.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_1_backstopjs-testt_width-xs-1_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_1_backstopjs-testt_width-xs-1_1_tablet_v.png",
+        "selector": "[backstopjs-test] .t_width-xs-1",
+        "fileName": "2_1_backstopjs-testt_width-xs-1_1_tablet_v.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_2_backstopjs-testt_width-xs-2_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_2_backstopjs-testt_width-xs-2_1_tablet_v.png",
+        "selector": "[backstopjs-test] .t_width-xs-2",
+        "fileName": "2_2_backstopjs-testt_width-xs-2_1_tablet_v.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_3_backstopjs-testt_width-xs-3_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_3_backstopjs-testt_width-xs-3_1_tablet_v.png",
+        "selector": "[backstopjs-test] .t_width-xs-3",
+        "fileName": "2_3_backstopjs-testt_width-xs-3_1_tablet_v.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_4_backstopjs-testt_padding-xs-0_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_4_backstopjs-testt_padding-xs-0_1_tablet_v.png",
+        "selector": "[backstopjs-test] .t_padding-xs-0",
+        "fileName": "2_4_backstopjs-testt_padding-xs-0_1_tablet_v.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_5_backstopjs-testt_padding-xs-1_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_5_backstopjs-testt_padding-xs-1_1_tablet_v.png",
+        "selector": "[backstopjs-test] .t_padding-xs-1",
+        "fileName": "2_5_backstopjs-testt_padding-xs-1_1_tablet_v.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_6_backstopjs-testt_padding-xs-2_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_6_backstopjs-testt_padding-xs-2_1_tablet_v.png",
+        "selector": "[backstopjs-test] .t_padding-xs-2",
+        "fileName": "2_6_backstopjs-testt_padding-xs-2_1_tablet_v.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_7_backstopjs-testt_padding-xs-3_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_7_backstopjs-testt_padding-xs-3_1_tablet_v.png",
+        "selector": "[backstopjs-test] .t_padding-xs-3",
+        "fileName": "2_7_backstopjs-testt_padding-xs-3_1_tablet_v.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_0_backstopjs-testt_width-xs-0_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_0_backstopjs-testt_width-xs-0_2_tablet_h.png",
+        "selector": "[backstopjs-test] .t_width-xs-0",
+        "fileName": "2_0_backstopjs-testt_width-xs-0_2_tablet_h.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_1_backstopjs-testt_width-xs-1_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_1_backstopjs-testt_width-xs-1_2_tablet_h.png",
+        "selector": "[backstopjs-test] .t_width-xs-1",
+        "fileName": "2_1_backstopjs-testt_width-xs-1_2_tablet_h.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_2_backstopjs-testt_width-xs-2_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_2_backstopjs-testt_width-xs-2_2_tablet_h.png",
+        "selector": "[backstopjs-test] .t_width-xs-2",
+        "fileName": "2_2_backstopjs-testt_width-xs-2_2_tablet_h.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_3_backstopjs-testt_width-xs-3_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_3_backstopjs-testt_width-xs-3_2_tablet_h.png",
+        "selector": "[backstopjs-test] .t_width-xs-3",
+        "fileName": "2_3_backstopjs-testt_width-xs-3_2_tablet_h.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_4_backstopjs-testt_padding-xs-0_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_4_backstopjs-testt_padding-xs-0_2_tablet_h.png",
+        "selector": "[backstopjs-test] .t_padding-xs-0",
+        "fileName": "2_4_backstopjs-testt_padding-xs-0_2_tablet_h.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_5_backstopjs-testt_padding-xs-1_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_5_backstopjs-testt_padding-xs-1_2_tablet_h.png",
+        "selector": "[backstopjs-test] .t_padding-xs-1",
+        "fileName": "2_5_backstopjs-testt_padding-xs-1_2_tablet_h.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_6_backstopjs-testt_padding-xs-2_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_6_backstopjs-testt_padding-xs-2_2_tablet_h.png",
+        "selector": "[backstopjs-test] .t_padding-xs-2",
+        "fileName": "2_6_backstopjs-testt_padding-xs-2_2_tablet_h.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_7_backstopjs-testt_padding-xs-3_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_7_backstopjs-testt_padding-xs-3_2_tablet_h.png",
+        "selector": "[backstopjs-test] .t_padding-xs-3",
+        "fileName": "2_7_backstopjs-testt_padding-xs-3_2_tablet_h.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_0_backstopjs-testt_width-xs-0_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_0_backstopjs-testt_width-xs-0_3_desktop.png",
+        "selector": "[backstopjs-test] .t_width-xs-0",
+        "fileName": "2_0_backstopjs-testt_width-xs-0_3_desktop.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_1_backstopjs-testt_width-xs-1_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_1_backstopjs-testt_width-xs-1_3_desktop.png",
+        "selector": "[backstopjs-test] .t_width-xs-1",
+        "fileName": "2_1_backstopjs-testt_width-xs-1_3_desktop.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_2_backstopjs-testt_width-xs-2_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_2_backstopjs-testt_width-xs-2_3_desktop.png",
+        "selector": "[backstopjs-test] .t_width-xs-2",
+        "fileName": "2_2_backstopjs-testt_width-xs-2_3_desktop.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_3_backstopjs-testt_width-xs-3_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_3_backstopjs-testt_width-xs-3_3_desktop.png",
+        "selector": "[backstopjs-test] .t_width-xs-3",
+        "fileName": "2_3_backstopjs-testt_width-xs-3_3_desktop.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_4_backstopjs-testt_padding-xs-0_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_4_backstopjs-testt_padding-xs-0_3_desktop.png",
+        "selector": "[backstopjs-test] .t_padding-xs-0",
+        "fileName": "2_4_backstopjs-testt_padding-xs-0_3_desktop.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_5_backstopjs-testt_padding-xs-1_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_5_backstopjs-testt_padding-xs-1_3_desktop.png",
+        "selector": "[backstopjs-test] .t_padding-xs-1",
+        "fileName": "2_5_backstopjs-testt_padding-xs-1_3_desktop.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_6_backstopjs-testt_padding-xs-2_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_6_backstopjs-testt_padding-xs-2_3_desktop.png",
+        "selector": "[backstopjs-test] .t_padding-xs-2",
+        "fileName": "2_6_backstopjs-testt_padding-xs-2_3_desktop.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_7_backstopjs-testt_padding-xs-3_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/2_7_backstopjs-testt_padding-xs-3_3_desktop.png",
+        "selector": "[backstopjs-test] .t_padding-xs-3",
+        "fileName": "2_7_backstopjs-testt_padding-xs-3_3_desktop.png",
+        "label": "UI Library - Trump"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_0_backstopjs-testbackstopjs-test-homepage-article-tile_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/3_0_backstopjs-testbackstopjs-test-homepage-article-tile_0_mobile.png",
+        "selector": "[backstopjs-test] [backstopjs-test-homepage-article-tile]",
+        "fileName": "3_0_backstopjs-testbackstopjs-test-homepage-article-tile_0_mobile.png",
+        "label": "UI Library - Extra"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_1_backstopjs-testbackstopjs-test-career-job-alert_0_mobile.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/3_1_backstopjs-testbackstopjs-test-career-job-alert_0_mobile.png",
+        "selector": "[backstopjs-test] [backstopjs-test-career-job-alert]",
+        "fileName": "3_1_backstopjs-testbackstopjs-test-career-job-alert_0_mobile.png",
+        "label": "UI Library - Extra"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_0_backstopjs-testbackstopjs-test-homepage-article-tile_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/3_0_backstopjs-testbackstopjs-test-homepage-article-tile_1_tablet_v.png",
+        "selector": "[backstopjs-test] [backstopjs-test-homepage-article-tile]",
+        "fileName": "3_0_backstopjs-testbackstopjs-test-homepage-article-tile_1_tablet_v.png",
+        "label": "UI Library - Extra"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_1_backstopjs-testbackstopjs-test-career-job-alert_1_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/3_1_backstopjs-testbackstopjs-test-career-job-alert_1_tablet_v.png",
+        "selector": "[backstopjs-test] [backstopjs-test-career-job-alert]",
+        "fileName": "3_1_backstopjs-testbackstopjs-test-career-job-alert_1_tablet_v.png",
+        "label": "UI Library - Extra"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_0_backstopjs-testbackstopjs-test-homepage-article-tile_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/3_0_backstopjs-testbackstopjs-test-homepage-article-tile_2_tablet_h.png",
+        "selector": "[backstopjs-test] [backstopjs-test-homepage-article-tile]",
+        "fileName": "3_0_backstopjs-testbackstopjs-test-homepage-article-tile_2_tablet_h.png",
+        "label": "UI Library - Extra"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_1_backstopjs-testbackstopjs-test-career-job-alert_2_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/3_1_backstopjs-testbackstopjs-test-career-job-alert_2_tablet_h.png",
+        "selector": "[backstopjs-test] [backstopjs-test-career-job-alert]",
+        "fileName": "3_1_backstopjs-testbackstopjs-test-career-job-alert_2_tablet_h.png",
+        "label": "UI Library - Extra"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_0_backstopjs-testbackstopjs-test-homepage-article-tile_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/3_0_backstopjs-testbackstopjs-test-homepage-article-tile_3_desktop.png",
+        "selector": "[backstopjs-test] [backstopjs-test-homepage-article-tile]",
+        "fileName": "3_0_backstopjs-testbackstopjs-test-homepage-article-tile_3_desktop.png",
+        "label": "UI Library - Extra"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_1_backstopjs-testbackstopjs-test-career-job-alert_3_desktop.png",
+        "test": "../../backstop_data/bitmaps_test/20160226-115016/3_1_backstopjs-testbackstopjs-test-career-job-alert_3_desktop.png",
+        "selector": "[backstopjs-test] [backstopjs-test-career-job-alert]",
+        "fileName": "3_1_backstopjs-testbackstopjs-test-career-job-alert_3_desktop.png",
+        "label": "UI Library - Extra"
       }
     ]
   },
-  "lastConfigHash": "76f5cdc63652dfd4e7ad21aff7f0e1c57d070368"
+  "lastConfigHash": "5551e3fbe93b6ebe46ce286ca2507a7565a77d3c"
 }

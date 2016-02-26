@@ -4,6 +4,10 @@
 // * margin
 // * text-size
 
+.t_inline-block {
+    display: inline-block;
+}
+
 // config
 $t_layout__width-height_grid: 0, 5px, 15px, 30px, 60px, 90px, 120px, 150px, 180px, 210px;
 $t_layout__padding-margin_grid: 0, 2px, 5px, 10px, 15px, 20px, 25px, 30px, 45px, 60px, 75px, 90px;

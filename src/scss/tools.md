@@ -11,7 +11,6 @@
 ## Gulp
 * gulp-autoprefixer
 * gulp-combine-mq
-* gulp-csso
 * gulp-cssnano
 * gulp-csslint
 * gulp-sourcemaps

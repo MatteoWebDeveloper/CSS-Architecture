@@ -10,11 +10,10 @@ block header
 block content
     section(class="container")
         article
-            
             a(href='index.html',class='margin-bottom-xs-4')
                 | <i class="icon-back"></i>Back to index
 
-            hr/
+            hr/            
             
             // code location
             h2 bootstrap-sass/buttons.scss
@@ -45,6 +44,12 @@ block content
             // end test
             
             
+            hr/
+            
+            
+            // code location
+            h2 bootstrap-sass/panel.scss
+            
             // UI title
             h3 .panel 
             
@@ -54,7 +59,14 @@ block content
                 code(class="hljs html  t_padding-xs-0 t_margin-xs-0")
                     | 
                     |    <div class="panel panel-default">
-                    |    <div class="panel-heading">Panel heading without title</div>
+                    |        <div class="panel-heading">Panel heading without title</div>
+                    |        <div class="panel-body">
+                    |            Basic panel example
+                    |        </div>
+                    |    </div>
+                    | 
+                    |    <div class="panel panel-primary">
+                    |        <div class="panel-heading">Panel heading without title</div>
                     |        <div class="panel-body">
                     |            Basic panel example
                     |        </div>
@@ -68,6 +80,71 @@ block content
                     div(class="panel-heading") Panel heading without title
                     div(class="panel-body")
                         | Basic panel example
+                        
+            div(class="t_margin-bottom-xs-4",backstopjs-test)
+                div(class="panel panel-primary")
+                    div(class="panel-heading") Panel heading without title
+                    div(class="panel-body")
+                        | Basic panel example
+            // end test
+            
+            
+            hr/
+            
+            
+            // code location
+            h2 bootstrap-sass/pagination.scss
+            
+            // UI title
+            h3 .pagination 
+            
+            // start code reference
+            pre(class="pre-scrollable t_padding-xs-0 t_margin-xs-0 t_margin-bottom-xs-4")
+                span(class="t_padding-left-xs-4") code:
+                code(class="hljs html  t_padding-xs-0 t_margin-xs-0")
+                    | 
+                    |    <nav>
+                    |        <ul class="pagination">
+                    |            <li>
+                    |                <a href="#" aria-label="Previous">
+                    |                    <span aria-hidden="true">&laquo;</span>
+                    |                </a>
+                    |            </li>
+                    |            <li><a href="#">1</a></li>
+                    |            <li><a href="#">2</a></li>
+                    |            <li><a href="#">3</a></li>
+                    |            <li><a href="#">4</a></li>
+                    |            <li><a href="#">5</a></li>
+                    |            <li>
+                    |                <a href="#" aria-label="Next">
+                    |                    <span aria-hidden="true">&raquo;</span>
+                    |                </a>
+                    |            </li>
+                    |        </ul>
+                    |    </nav>
+                    | 
+            // end code reference
+            
+            // start test
+            div(class="t_margin-bottom-xs-4",backstopjs-test)            
+                nav
+                    ul(class="pagination")
+                        li
+                            a(href="#",aria-label="Previous")
+                                span(aria-hidden="true") &laquo;
+                        li
+                            a(href="#") 1
+                        li
+                            a(href="#") 2
+                        li
+                            a(href="#") 3
+                        li
+                            a(href="#") 4
+                        li
+                            a(href="#") 5
+                        li    
+                            a(href="#",aria-label="Next")
+                                span(aria-hidden="true") &raquo;   
             // end test
 
             hr/

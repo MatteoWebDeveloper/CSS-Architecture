@@ -5,13 +5,10 @@ html
         title 
             block title
         
-        // link(rel='stylesheet',href='css/vendor.css',media='screen')
-        link(rel="stylesheet",href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/solarized-dark.min.css")
-        link(rel='stylesheet',href='/css/main.css',media='screen')
-        style 
-            | /* .btn { color:red; */ }
-            | /* .btn { padding: 12px; } */
-            | /* .btn { /* border: 1px solid #ccc; */ } */
+        block style
+            // link(rel='stylesheet',href='css/vendor.css',media='screen')
+            link(rel="stylesheet",href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/solarized-dark.min.css")
+            link(rel='stylesheet',href='/css/main.css',media='screen')
     body
         header
             block header
@@ -20,7 +17,7 @@ html
             block content
             
         footer
-            div(class='container') 
+            div(class='container t_margin-bottom-xs-4') 
                 | Made with <i class="icon-heart t_color-red"></i> by italians
     
         // script dependency
