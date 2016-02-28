@@ -17,8 +17,10 @@
   ],
   "dependencies": {
     "bootstrap-sass": "~3.3.6",
-    "angular": "~1.5",
-    "lodash": "~3.10.1",
-    "moment": "~2.10.6"
+    "moment": "~2.10.6",
+    "clipboard": "~1.5.9",
+    "riot": "~2.3.16",
+    "prism": "~1.4.1",
+    "lodash": "~4.5.1"
   }
 }

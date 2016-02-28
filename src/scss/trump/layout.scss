@@ -3,10 +3,7 @@
 // * padding
 // * margin
 // * text-size
-
-.t_inline-block {
-    display: inline-block;
-}
+// * display
 
 // config
 $t_layout__width-height_grid: 0, 5px, 15px, 30px, 60px, 90px, 120px, 150px, 180px, 210px;
@@ -104,3 +101,17 @@ $t_layout__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20p
     @include grid-spacing($property,$t_layout__font-size_grid)
 }
 /* end text-size */
+
+/* group display */
+.t_block {
+    display: block !important;
+}
+
+.t_inline-block {
+    display: inline-block !important;
+}
+
+.t_hide {
+    display: none !important;
+}
+/* end display */

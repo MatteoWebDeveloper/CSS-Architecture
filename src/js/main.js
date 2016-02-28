@@ -1,23 +1,13 @@
-'use strict';
-
 (function(){
-    // transform html to string
-    var codeListDOM = document.querySelectorAll('pre code');
+    'use strict';
 
-    for (var i = 0; i < codeListDOM.length; i++) {
-        var elm = codeListDOM[i],
-            elmString = elm.innerHTML;
+    var depCopySnippets = require('./copy-snippets.js');
+    var depHtmlToText = require('./html-to-text.js');
 
-        // convert
-        //elmString = elmString.replace(/^\s+/g, '');
-        elmString = elmString.replace(/\</g, '&lt;');
-        elmString = elmString.replace(/\>/g, '&gt;');
-        //elmString = elmString.replace(/\s+$/g, '');
+    var CopySnippets = new depCopySnippets();
+    var HtmlToText = new depHtmlToText();
 
-        // inject back
-        elm.innerHTML = elmString;
-    }
-
-    // highlight
-    hljs.initHighlightingOnLoad();
+    CopySnippets.init();
+    HtmlToText.init();
+    new Clipboard('[copy-snippet]');
 })();

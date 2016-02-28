@@ -1,12 +1,12 @@
 # CSS Architecture setup
 
 #Docs
-- [CSS Architecture](src/scss/architecture.md)
-- [CSS Development Procedure](src/scss/development-procedure.md)
-- [CSS Deprecation Procedure](src/scss/deprecation-procedure.md)
-- [CSS UI Library](src/scss/ui-library.md)
-- [CSS Test](src/scss/test.md)
-- [CSS Tools](src/scss/tools.md)
+- [CSS Architecture](src/scss/_docs/architecture.md)
+- [CSS Development Procedure](src/scss/_docs/development-procedure.md)
+- [CSS Deprecation Procedure](src/scss/_docs/deprecation-procedure.md)
+- [CSS UI Library](src/scss/_docs/ui-library.md)
+- [CSS Test](src/scss/_docs/test.md)
+- [CSS Tools](src/scss/_docs/tools.md)
 
 ## install node packages
 `npm install`

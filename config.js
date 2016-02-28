@@ -12,14 +12,19 @@ var config = {
     sassFiles:     "src/scss/**/*.scss",
     cssDist:       "dist/css/",
     cssDistFiles:  "dist/css/*.css",
+    jsMain:        "src/js/main.js",
     jsFiles:       "src/js/**/*.js",
     jsDist:        "dist/js/",
     vendor: {
-        css: [],
+        css: [
+            "bower_components/prism/themes/prism.css", // or use okaidia
+        ],
         js: [
-            "bower_components/lodash/lodash.js",
-            "bower_components/moment/moment.js",
-            "bower_components/angular/angular.js"
+            //"bower_components/lodash/dist/lodash.core.min.js", // if you want complete lodash remove core
+            //"bower_components/moment/min/moment.min.js",
+            "bower_components/clipboard/dist/clipboard.min.js",
+            "bower_components/prism/prism.js",
+            "bower_components/riot/riot.min.js",
         ]
     },
     csslint : {
@@ -39,17 +44,15 @@ var config = {
         'zero-units': false
     },
     templates: [
-        'dist/**/*.html',
+        'src/views/**/*.jade',
         'src/js/**/*.js'
     ],
-    deprecationEndDate: '2016, 1, 28', // (yyyy, mm, dd) keep in mind month start from 0
-    deprecatedClasses : [
-        // {
-        //     regex: /(| |'|")oldClass(| |'|")/,
-        //     oldClass: '.oldClass',
-        //     newClass: '.newClass'
-        // }
-    ]
+    deprecationEndDate: '2016, 2, 28', // (yyyy, mm, dd) keep in mind month start from 0
+    deprecatedClasses : [{
+        regex: /("|'| )old-class("|'| )/g,
+        oldClass: 'old-class',
+        newClass: 'new-class'
+    }]
 };
 
 module.exports = config;

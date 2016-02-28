@@ -1,0 +1,25 @@
+extends ../../templates/ui-component.jade
+
+block ui-title 
+    | .btn
+
+
+block ui-copyCode
+    | code hidden
+
+
+block ui-demoTest
+    div(class="t_margin-bottom-xs-4",backstopjs-test)
+        button(class="btn") button
+
+    div(class="t_margin-bottom-xs-4",backstopjs-test)
+        button(class="btn btn-default") button
+
+    div(backstopjs-test)
+        button(class="btn btn-primary") button
+    
+    
+block ui-showCode
+    | <button class="btn">text-node</button>
+    | <button class="btn btn-default">text-node</button>
+    | <button class="btn btn-primary">text-node</button>

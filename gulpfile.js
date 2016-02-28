@@ -78,6 +78,7 @@ gulp.task('cssVendor', function()
     return gulp
         .src(config.vendor.css)
         .pipe(concat('vendor.css'))
+        .pipe(cssnano())
         .pipe(gulp.dest(config.cssDist));
 });
 
@@ -131,11 +132,10 @@ gulp.task('css-deprecated', function ()
             check(obj.regex)
         )
         .on('error', function (err) {
-
             if (today >= finalStage) {
                 gutil.log(
                     '\n\n' +
-                    gutil.colors.red('DANGER CSS CLASS Deprecated: \n') +
+                    gutil.colors.red('DANGER CSS CLASS Deprecated: ' + err.message +'\n') +
                     '@deprecated: ' + gutil.colors.yellow(obj.oldClass) + ', \n' +
                     '@use: ' + gutil.colors.green(obj.newClass) +
                     '\n'
@@ -147,7 +147,7 @@ gulp.task('css-deprecated', function ()
             } else {
                 gutil.log(
                     '\n\n' +
-                    gutil.colors.yellow('WARNING CSS CLASS Deprecated: \n') +
+                    gutil.colors.yellow('WARNING CSS CLASS Deprecated: ' + err.message + '\n') +
                     '@deprecated: ' + gutil.colors.yellow(obj.oldClass) + ', \n' +
                     '@use: ' + gutil.colors.green(obj.newClass) +
                     '\n'
@@ -182,6 +182,7 @@ gulp.task('jsVendor', function()
     return gulp
         .src(config.vendor.js)
         .pipe(concat('vendor.js'))
+        .pipe(uglify())
         .pipe(gulp.dest(config.jsDist));
 });
 
@@ -189,14 +190,17 @@ gulp.task('jsVendor', function()
 gulp.task('js', function()
 {
     return gulp
-        .src(config.jsFiles)
-        .pipe(
-            gulpif(isSourceMap(), sourcemaps.init())
-        )
-        //.pipe(uglify())
-        .pipe(
-            gulpif(isSourceMap(),sourcemaps.write())
-        )
+        .src(config.jsMain)
+        .pipe(browserify({
+            debug: true
+        }))
+        // .pipe(
+        //     gulpif(isSourceMap(), sourcemaps.init())
+        // )
+        // //.pipe(uglify())
+        // .pipe(
+        //     gulpif(isSourceMap(),sourcemaps.write())
+        // )
         .pipe(gulp.dest(config.jsDist))
         .pipe(livereload());
 });

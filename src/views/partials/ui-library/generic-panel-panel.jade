@@ -1,0 +1,39 @@
+extends ../../templates/ui-component.jade
+
+
+block ui-title 
+    | .panel
+
+
+block ui-copyCode
+    | code hidden
+
+
+block ui-demoTest
+    div(class="t_margin-bottom-xs-4",backstopjs-test)
+        div(class="panel panel-default")
+            div(class="panel-heading") Panel heading without title
+            div(class="panel-body")
+                | Basic panel example
+                
+    div(backstopjs-test)
+        div(class="panel panel-primary t_margin-bottom-xs-0")
+            div(class="panel-heading") Panel heading without title
+            div(class="panel-body")
+                | Basic panel example
+    
+    
+block ui-showCode
+    | <div class="panel panel-default">
+    |     <div class="panel-heading">Panel heading without title</div>
+    |     <div class="panel-body">
+    |         Basic panel example
+    |     </div>
+    | </div>
+    | 
+    | <div class="panel panel-primary">
+    |     <div class="panel-heading">Panel heading without title</div>
+    |     <div class="panel-body">
+    |         Basic panel example
+    |     </div>
+    | </div>
