@@ -8,7 +8,7 @@ div(class="row t_margin-bottom-xs-2")
     
     div(class="col-xs-6 text-right")
         span(class="btn btn-default btn-xs t_margin-right-xs-2",copy-snippet, data-clipboard-target='#'+uiTitle) copy code
-        span(class="btn btn-default btn-xs") show code
+        span(class="btn btn-default btn-xs",toogle-target='#'+uiTitle) show code
 
 
 div(class="panel panel-default t_padding-bottom-xs-0")      
@@ -18,7 +18,7 @@ div(class="panel panel-default t_padding-bottom-xs-0")
 
 
     // Code to show
-    div(class="panel-footer t_padding-xs-0",id=uiTitle, data-clipboard-text="https://github.com/zenorocha/clipboard.js.git")
+    div(class="panel-footer t_padding-xs-0  t_collapse", id=uiTitle)
         pre(class="pre-scrollable pre--panel-footer t_padding-vertical-xs-3 t_padding-horizontal-xs-4 t_margin-xs-0")
             code(class="language-xml t_padding-xs-0 t_margin-xs-0")
                 block ui-showCode

@@ -111,6 +111,11 @@ $t_layout__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20p
     display: inline-block !important;
 }
 
+.t_collapse {
+    height: 0 !important;
+    overflow: hidden;
+}
+
 .t_hide {
     display: none !important;
 }

@@ -20,7 +20,7 @@ var config = {
             "bower_components/prism/themes/prism.css", // or use okaidia
         ],
         js: [
-            //"bower_components/lodash/dist/lodash.core.min.js", // if you want complete lodash remove core
+            "bower_components/lodash/dist/lodash.core.min.js", // if you want complete lodash remove core
             //"bower_components/moment/min/moment.min.js",
             "bower_components/clipboard/dist/clipboard.min.js",
             "bower_components/prism/prism.js",
