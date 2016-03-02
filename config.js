@@ -52,7 +52,10 @@ var config = {
         regex: /("|'| )old-class("|'| )/g,
         oldClass: 'old-class',
         newClass: 'new-class'
-    }]
+    }],
+    preprocess: {
+        context: { ANTICACHE : new Date().getTime() } 
+    }
 };
 
 module.exports = config;

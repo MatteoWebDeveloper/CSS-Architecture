@@ -93,7 +93,7 @@ gulp.task('css', function()
         )
         .pipe(sass().on('error', sass.logError))
         .pipe( // fontello anticache
-            gulpPreprocess({context: {ANTICACHE : new Date().getTime()} })
+            gulpPreprocess(config.preprocess)
         )
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
