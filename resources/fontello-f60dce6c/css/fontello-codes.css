@@ -1,0 +1,8 @@
+
+.icon-star-empty:before { content: '\e800'; } /* '' */
+.icon-heart:before { content: '\e801'; } /* '' */
+.icon-back:before { content: '\e802'; } /* '' */
+.icon-ok-circled:before { content: '\e803'; } /* '' */
+.icon-cancel-circled:before { content: '\e804'; } /* '' */
+.icon-attention:before { content: '\e805'; } /* '' */
+.icon-doc-text:before { content: '\e807'; } /* '' */

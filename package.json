@@ -37,6 +37,7 @@
     "gulp-jshint": "^2.0.0",
     "gulp-livereload": "^3.8.1",
     "gulp-open": "^1.0.0",
+    "gulp-preprocess": "^2.0.0",
     "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-symdiff": "0.0.5",

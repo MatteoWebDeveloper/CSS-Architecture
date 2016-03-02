@@ -6,6 +6,7 @@ var parseArgs       = require('minimist');
 var gulp            = require('gulp');
 var gutil           = require('gulp-util');
 var gulpif          = require('gulp-if');
+var gulpPreprocess  = require('gulp-preprocess');
 var check           = require('gulp-check');
 var runSequence     = require('run-sequence');
 var connect         = require('gulp-connect');
@@ -91,6 +92,9 @@ gulp.task('css', function()
             gulpif(isSourceMap(), sourcemaps.init())
         )
         .pipe(sass().on('error', sass.logError))
+        .pipe( // fontello anticache
+            gulpPreprocess({context: {ANTICACHE : new Date().getTime()} })
+        )
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
