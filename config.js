@@ -23,8 +23,8 @@ var config = {
             "bower_components/lodash/dist/lodash.core.min.js", // if you want complete lodash remove core
             //"bower_components/moment/min/moment.min.js",
             "bower_components/clipboard/dist/clipboard.min.js",
-            "bower_components/prism/prism.js",
-            "bower_components/riot/riot.min.js",
+            "bower_components/prism/prism.js"
+            //"bower_components/riot/riot.min.js",
         ]
     },
     csslint : {
@@ -54,7 +54,7 @@ var config = {
         newClass: 'new-class'
     }],
     preprocess: {
-        context: { ANTICACHE : new Date().getTime() } 
+        context: { ANTICACHE : new Date().getTime() }
     }
 };
 

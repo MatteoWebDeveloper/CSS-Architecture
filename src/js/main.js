@@ -2,7 +2,7 @@
     'use strict';
 
     // dependencies
-    var riot = require('riot.js')
+    var riot = require('riot')
     var depCopySnippets = require('./collapse-toggle.js');
     var depHtmlToText = require('./html-to-text.js');
     var collapseToggle = require('./collapse-toggle.tag')
@@ -16,5 +16,5 @@
     new Clipboard('[copy-snippet]');
 
     // init riot mount
-    riot.mount('*');
+    riot.mount(collapseToggle);
 })();
