@@ -9,7 +9,7 @@
 // * Section
 // * Trump
 
-
+/* stylelint-disable */
 /* @start Setting */
 @import "setting/theme";
 /* @end Setting */
@@ -25,7 +25,7 @@
 @import 'generic/bootstrap';
 @import 'generic/fontello';
 /* @end Generic */
-
+/* stylelint-enable */
 
 /* @start Extension */
 //@import 'extension/alerts';

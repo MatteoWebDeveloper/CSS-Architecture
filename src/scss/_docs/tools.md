@@ -5,8 +5,10 @@
 * atom-beautify
 * pigment
 * quick-editor
+* css-comb
 * css-edit-groups
 * atom-css-class-checker
+* linter-stylelint
 
 ## Gulp
 * gulp-autoprefixer
@@ -15,7 +17,7 @@
 * gulp-csslint
 * gulp-sourcemaps
 * gulp-check
-
+* [gulp-stylelint](https://github.com/olegskl/gulp-stylelint)
 
 ## Web Tools (Quality and performance test)
 * [CSS Stats](http://cssstats.com/)

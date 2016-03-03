@@ -6,6 +6,7 @@ var parseArgs       = require('minimist');
 var gulp            = require('gulp');
 var gutil           = require('gulp-util');
 var gulpif          = require('gulp-if');
+var clean           = require('gulp-clean');
 var chug            = require( 'gulp-chug' );
 var gulpPreprocess  = require('gulp-preprocess');
 var check           = require('gulp-check');
@@ -21,6 +22,8 @@ var autoprefixer    = require('gulp-autoprefixer');
 var cssnano         = require('gulp-cssnano');
 var combineMq       = require('gulp-combine-mq');
 var csslint         = require('gulp-csslint');
+var stylelint       = require('gulp-stylelint').default;
+var stylelintLog    = require('gulp-stylelint-console-reporter').default;
 var symdiff         = require('gulp-symdiff');
 var symdiffHtml     = require('symdiff-html');
 var symdiffCss      = require('symdiff-css');
@@ -42,7 +45,8 @@ function isSourceMap ()
 
 gulp.task('clean', function ()
 {
-    return del([config.distFiles]);
+    return gulp.src(config.clean)
+		.pipe(clean({force: true}))
 });
 
 
@@ -180,6 +184,23 @@ gulp.task('css-unused', function ()
 });
 
 
+gulp.task('css-stylelint', function ()
+{
+    return gulp
+        .src(config.sassIndex)
+        .pipe(sass().on('error', sass.logError))
+        .pipe( // fontello anticache
+            gulpPreprocess(config.preprocess)
+        )
+        .pipe(gulp.dest(config.cssTemp))
+        .pipe(
+            stylelint({
+                reporters: [stylelintLog()]
+            })
+        );
+});
+
+
 gulp.task('jsVendor', function()
 {
     if (config.vendor.js.length == 0) {
@@ -210,6 +231,20 @@ gulp.task('js', function()
     // .pipe(
     //     gulpif(isSourceMap(),sourcemaps.write())
     // )
+});
+
+
+gulp.task('backstopjs-reference', function()
+{
+    gulp.src( './node_modules/backstopjs/gulpfile.js' )
+        .pipe( chug({tasks:['reference']}) );
+});
+
+
+gulp.task('backstopjs-test', function()
+{
+    gulp.src( './node_modules/backstopjs/gulpfile.js' )
+        .pipe( chug({tasks:['test']}) );
 });
 
 
@@ -246,6 +281,7 @@ gulp.task('default', function ()
 {
     runSequence(
         'clean',
+        'css-stylelint',
         ['fonts','html','jade','cssVendor','css','jsVendor','js'],
         ['css-deprecated'],
         'connect','watch'

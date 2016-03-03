@@ -1,7 +1,8 @@
 <collapse-toggle-button>
-    <span>Hello world</span>
-    <span if={ !toggleState } class="btn btn-default btn-xs">{opt.message} show code</span>
-    <span if={ toggleState }>hide code</span>
+    <span class="btn btn-default btn-xs">
+        <span if={ !toggleState }>show code</span>
+        <span if={ !toggleState }>hide code</span>
+    </span>
 
     <style scoped>
         /* css */
@@ -10,7 +11,7 @@
 
     <script>
         // javascript
-        alert('running');
+        console.log('running');
 
         this.toggleState = true;
     </script>

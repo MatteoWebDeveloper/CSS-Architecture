@@ -24,3 +24,8 @@ this command create list of image reference
 
 this task is comparing your reference with the current UI
 > (node_modules/backstopjs/; gulp test)
+
+## TODO
+- test should be on the parent element
+- uCss https://github.com/oyvindeh/ucss
+- http://stylelint.io/user-guide/configuration/

@@ -1,6 +1,7 @@
 var config = {
     localhost:     "http://localhost:8080",
     port:          "8080",
+    clean:         ['temp','dist'],
     distFiles:     "dist/*",
     fontFiles :    "src/fonts/**/*",
     fontDist :     "dist/fonts/",
@@ -10,6 +11,8 @@ var config = {
     htmlDist:      "dist/",
     sassIndex:     "src/scss/main.scss",
     sassFiles:     "src/scss/**/*.scss",
+    tempFiles:     "temp/*",
+    cssTemp:       "temp/css/",
     cssDist:       "dist/css/",
     cssDistFiles:  "dist/css/*.css",
     jsMain:        "src/js/main.js",

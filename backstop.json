@@ -37,6 +37,7 @@
 
                 "[backstopjs-test] .pagination"
             ],
+            "misMatchThresh": 0.1,
             "readyEvent": null,
             "delay": 500,
             "onReadyScript": null,
@@ -50,6 +51,7 @@
             "selectors": [
                 "[backstopjs-test] .c_text-header"
             ],
+            "misMatchThresh": 0.1,
             "readyEvent": null,
             "delay": 500,
             "onReadyScript": null,
@@ -71,6 +73,7 @@
                 "[backstopjs-test] .t_padding-xs-2",
                 "[backstopjs-test] .t_padding-xs-3"
             ],
+            "misMatchThresh": 0.1,
             "readyEvent": null,
             "delay": 500,
             "onReadyScript": null,
@@ -85,6 +88,7 @@
                 "[backstopjs-test] [backstopjs-test-homepage-article-tile]",
                 "[backstopjs-test] [backstopjs-test-career-job-alert]"
             ],
+            "misMatchThresh": 0.1,
             "readyEvent": null,
             "delay": 500,
             "onReadyScript": null,

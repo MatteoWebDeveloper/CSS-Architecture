@@ -1,0 +1,7 @@
+{
+    "rules": {
+        "no-duplicate-selectors": true,
+        "selector-no-id": true,
+        "selector-no-universal": true
+    },
+}
