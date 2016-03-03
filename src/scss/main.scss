@@ -9,7 +9,7 @@
 // * Section
 // * Trump
 
-/* stylelint-disable */
+
 /* @start Setting */
 @import "setting/theme";
 /* @end Setting */
@@ -20,7 +20,7 @@
 @import 'tool/build-color';
 /* @end Tool */
 
-
+/* stylelint-disable */
 /* @start Generic */
 @import 'generic/bootstrap';
 @import 'generic/fontello';
