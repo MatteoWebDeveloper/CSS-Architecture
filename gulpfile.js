@@ -24,7 +24,9 @@ var symdiff         = require('gulp-symdiff');
 var symdiffHtml     = require('symdiff-html');
 var symdiffCss      = require('symdiff-css');
 var concat          = require('gulp-concat');
-var browserify      = require('gulp-browserify');
+var browserify      = require('browserify');
+var riotify         = require('riotify');
+var source          = require('vinyl-source-stream');
 var jshint          = require('gulp-jshint');
 var uglify          = require('gulp-uglify');
 var config          = require('./config.js');
@@ -193,20 +195,19 @@ gulp.task('jsVendor', function()
 
 gulp.task('js', function()
 {
-    return gulp
-        .src(config.jsMain)
-        .pipe(browserify({
-            debug: true
-        }))
-        // .pipe(
-        //     gulpif(isSourceMap(), sourcemaps.init())
-        // )
-        // //.pipe(uglify())
-        // .pipe(
-        //     gulpif(isSourceMap(),sourcemaps.write())
-        // )
-        .pipe(gulp.dest(config.jsDist))
-        .pipe(livereload());
+    return browserify({ entries: [config.jsMain] })
+    .transform(riotify) // pass options if you need
+    .bundle()
+    .pipe(source('main.js'))
+    .pipe(gulp.dest(config.jsDist))
+    .pipe(livereload());
+    // .pipe(
+    //     gulpif(isSourceMap(), sourcemaps.init())
+    // )
+    // //.pipe(uglify())
+    // .pipe(
+    //     gulpif(isSourceMap(),sourcemaps.write())
+    // )
 });
 
 

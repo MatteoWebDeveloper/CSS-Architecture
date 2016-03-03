@@ -20,11 +20,11 @@
   "dependencies": {
     "backstopjs": "^1.1.0",
     "bower": "^1.6.9",
+    "browserify": "^13.0.0",
     "casperjs": "^1.1.0-beta3",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-browserify": "^0.5.1",
     "gulp-check": "^0.1.1",
     "gulp-combine-mq": "^0.4.0",
     "gulp-concat": "^2.6.0",
@@ -47,9 +47,12 @@
     "lodash": "^4.5.0",
     "minimist": "^1.2.0",
     "phantomjs": "^1.9.8",
+    "riot": "^2.3.16",
+    "riotify": "^1.0.0",
     "run-sequence": "^1.1.5",
     "slimerjs": "^0.9.6-2",
     "symdiff-css": "0.0.3",
-    "symdiff-html": "0.0.2"
+    "symdiff-html": "0.0.2",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
