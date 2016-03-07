@@ -1,4 +1,4 @@
-function componentFactory ()
+function Service ()
 {
     'use strict';
 
@@ -16,4 +16,4 @@ function componentFactory ()
     };
 };
 
-module.exports = componentFactory;
+module.exports = Service;

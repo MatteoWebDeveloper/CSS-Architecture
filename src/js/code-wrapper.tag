@@ -1,5 +1,5 @@
 <code-wrapper>
-    <div class={ t_collapse: !toggleState }>
+    <div class={ t_collapse: isCollapse }>
         <yield/>
     </div>
 
@@ -8,18 +8,18 @@
     </style>
 
     <script>
-        var HtmlToTextFactory = require('./html-to-text.js'),
+        var
+            ChannelManager = require('./event.js'),
+            HtmlToTextFactory = require('./html-to-text.js'),
+
+            channelInstance = ChannelManager.subscribe(opts.channel),
             htmlToText = new HtmlToTextFactory();
 
-        this.toggleState = true;
+        this.isCollapse = false;
 
         this.on('mount', function(e){
-
             var code = this.root.querySelector('pre code');
-
             htmlToText.init(code);
-
-            console.log('event:code-wrapper');
         });
     </script>
 </code-wrapper>

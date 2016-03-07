@@ -8,8 +8,15 @@
     </style>
 
     <script>
+        var ChannelManager = require('./event.js'),
+            channelInstance = ChannelManager.subscribe(opts.channel);
+
         this.copy = function (e) {
-            console.log('event:copy-button',e);
+            console.log('event:copy-button',e, ciao);
+
+            channelInstance.prop = 1;
+
+            debugger;
         };
     </script>
 </copy-button>

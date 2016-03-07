@@ -11,11 +11,18 @@
     </style>
 
     <script>
+        var ChannelManager = require('./event.js'),
+            channelInstance = ChannelManager.subscribe(opts.channel);
+
         this.toggleState = true;
 
         this.toogle = function (e) {
             this.toggleState = !this.toggleState;
+
+            channelInstance.prop = 1;
+
             console.log('event:toggle-button',e);
+            debugger;
         };
     </script>
 </toggle-button>
