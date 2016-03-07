@@ -3,18 +3,15 @@
 
     // dependencies
     var riot = require('riot'); // riotify need this
-    var depCopySnippets = require('./collapse-toggle.js');
-    var depHtmlToText = require('./html-to-text.js');
-    var collapseToggle = require('./collapse-toggle.tag')
+    var copyButton = require('./copy-button.tag');
+    var toogleButton = require('./toggle-button.tag');
+    var codeWrapper = require('./code-wrapper.tag');
 
-    // instances
-    var CopySnippets = new depCopySnippets();
-    var HtmlToText = new depHtmlToText();
+    //var CopySnippets = new depCopySnippets();
 
-    CopySnippets.init();
-    HtmlToText.init();
-    new Clipboard('[copy-snippet]');
+    // CopySnippets.init();
+    // HtmlToText.init();
 
     // init riot mount
-    riot.mount(collapseToggle);
+    riot.mount('*');
 })();
