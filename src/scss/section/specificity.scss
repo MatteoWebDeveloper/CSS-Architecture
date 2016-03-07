@@ -1,0 +1,63 @@
+// other component before
+.s_specificity-green-before {
+    color: green;
+}
+
+
+// card site
+.s_specificity-card, // fallback global bundle
+[class-site~="s_specificity-card"]
+{
+    padding: 10px;
+
+    cursor: pointer;
+    transition: background-color .5s;
+
+    border: 1px solid $gray-light;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 13px 20px -14px $gray-light;
+    flex-grow: 1;
+    color: black;
+
+    &:hover { background-color: #DEDEDE; }
+}
+    .s_specificity-card--hot,
+    [class-site~="s_specificity-card--hot"] {
+        background-color: #D47070;
+
+        &:hover { background-color: #E0492F; }
+    }
+
+
+// card spa
+[class-spa~="s_specificity-card"]
+{
+    padding: 10px;
+    cursor: pointer;
+    transition: border-color .5s, color .5s, background-color .5s;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: black;
+    box-shadow: 0 13px 20px -14px $gray-light;
+    flex-grow: 1;
+    color: white;
+
+    &:hover
+    {
+        border-color: black;
+        color: black;
+        background-color: white;
+    }
+}
+    [class-spa~="s_specificity-card--cold"] {
+        background-color: #70A0D4;
+
+        &:hover { background-color: #257FE0; }
+    }
+
+
+// other component after
+.s_specificity-purple-after {
+    color: purple;
+}

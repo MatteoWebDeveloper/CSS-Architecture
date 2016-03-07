@@ -39,14 +39,13 @@
 
 
 /* @group Component */
-@import 'component/text.scss';
-@import 'component/card.scss';
+@import 'component/text';
 /* @end Component */
 
 
-/* @group Shame */
-@import 'section/index';
-/* @end Shame */
+/* @group Section */
+@import 'section/specificity';
+/* @end Section */
 
 
 /* @group Trump */
