@@ -17,6 +17,7 @@ var config = {
     cssDistFiles:  "dist/css/*.css",
     jsMain:        "src/js/main.js",
     jsFiles:       "src/js/**/*.js",
+    tagFiles:       "src/js/**/*.tag",
     jsDist:        "dist/js/",
     vendor: {
         css: [

@@ -255,7 +255,7 @@ gulp.task('watch', function()
     gulp.watch(config.htmlFiles,['html']);
     gulp.watch(config.jadeFiles,['jade']);
     gulp.watch(config.sassFiles,['css']);
-    gulp.watch(config.jsFiles,['js']);
+    gulp.watch([config.jsFiles,config.tagFiles],['js']);
 });
 
 

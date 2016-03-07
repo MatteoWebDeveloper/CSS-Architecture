@@ -1,18 +1,19 @@
 <collapse-toggle-button>
     <span class="btn btn-default btn-xs">
-        <span if={ !toggleState }>show code</span>
-        <span if={ !toggleState }>hide code</span>
+        {toggleState}
+        <span if={ toggleState } onclick="{ toogle }">show code</span>
+        <span if={ !toggleState } onclick="{ toogle }">hide code</span>
     </span>
 
     <style scoped>
-        /* css */
         :scope { display: block }
     </style>
 
     <script>
-        // javascript
-        console.log('running');
-
         this.toggleState = true;
+
+        this.toogle = function (e) {
+            this.toggleState = !this.toggleState;
+        };
     </script>
 </collapse-toggle-button>
