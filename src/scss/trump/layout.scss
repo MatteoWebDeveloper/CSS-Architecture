@@ -103,6 +103,10 @@ $t_layout__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20p
 /* end text-size */
 
 /* group display */
+.t_flex {
+    display: flex !important;
+}
+
 .t_block {
     display: block !important;
 }
@@ -120,3 +124,16 @@ $t_layout__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20p
     display: none !important;
 }
 /* end display */
+
+
+/* group flex */
+.t_flex-grow {
+    flex-grow: 1 !important;
+}
+/* end flex */
+
+/* group position */
+.t_relative {
+    position: relative;
+}
+/* end position */

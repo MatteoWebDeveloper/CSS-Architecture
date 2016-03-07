@@ -1,23 +1,64 @@
-.o_corner-top-left {
+.o_corner-top-left
+{
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
 
-.o_corner-top-right {
+.o_corner-top-right
+{
     position: absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
 }
 
-.o_corner-bottom-right {
+.o_corner-bottom-right
+{
     position: absolute;
-    bottom:0;
-    right:0;
+    right: 0;
+    bottom: 0;
 }
 
-.o_corner-bottom-left {
+.o_corner-bottom-left
+{
     position: absolute;
-    bottom:0;
-    left:0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.o_page-l
+{
+    display: flex;
+}
+.o_page-l__body
+{
+    flex-grow: 1;
+}
+.o_page-l__side
+{
+    width: 200px;
+}
+
+
+.o_flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__col {
+        display: flex;
+        flex-direction: column; // IE need it
+    }
+
+    &__cell,
+    &__expand {
+        display: flex;
+        flex-direction: column; // IE need it
+        flex-grow: 1;
+    }
+
+    // fix bootstrap on Safari
+    &.row:before, &.row:after {
+        display: none !important;
+    }
 }

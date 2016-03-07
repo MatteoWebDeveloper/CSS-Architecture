@@ -8,10 +8,92 @@ block header
         h1  Specificity Study
 
 block content
-    section(class="container")
+    section(class="container t_padding-bottom-xs-4")
         article
         
             a(href='/index.html',class='margin-bottom-xs-4')
                 | <i class="icon-back"></i>Back to index
                 
-            p test :hover against !important
+            p attribute selector results is class and attribute have same specificity level
+            
+            // global bundle
+            div.o_page-l.t_padding-bottom-xs-4
+                div.o_page-l__body
+                    div(class="row  o_flex-grid")
+                        div(class="col-xs-12  o_flex-grid__col")
+                            | global .c_card
+                        div(class="col-xs-4  o_flex-grid__col")
+                            div(class="c_card t_bgcolor-gray")
+                                h2 title
+                                p trump element is applied on this card, but does not block hover.
+                                
+                        div(class="col-xs-4  o_flex-grid__col")
+                            div(class="c_card c_card--hot")
+                                h2 title
+                                p .c_card<br> .c_card--hot
+                        
+                        div(class="col-xs-4  o_flex-grid__col")
+                            div(class="c_card")
+                                h2 title
+                                p .c_card
+                            
+                div.o_page-l__side.t_padding-horizontal-xs-4
+                    | this is a object class
+            
+            
+            // card site
+            div.o_page-l.t_padding-bottom-xs-4
+                div.o_page-l__body
+                    div(class="row  o_flex-grid")
+                        div(class="col-xs-12  o_flex-grid__col")
+                            | scoped site .c_card
+                             
+                        div(class="col-xs-4  o_flex-grid__col")
+                            div(class="t_bgcolor-gray"
+                                class-site="c_card")
+                                h2 title
+                                p trump element is applied on this card, but does not block hover.
+                                
+                        div(class="col-xs-4  o_flex-grid__col")
+                            div(class-site="c_card c_card--hot")
+                                h2 title
+                                p [class-site~="c_card"]<br> [class-site~="c_card--hot"]
+                        
+                        div(class="col-xs-4  o_flex-grid__col")
+                            div(class="c_green-before"
+                                class-site="c_card" 
+                                class-spa="c_card--cold")
+                            
+                                h2 mix
+                                p [class-site~="c_card"]<br> [class-spa~="c_card--cold"]<br> <span class="c_green-before">.c_green-before</span>
+                            
+                div.o_page-l__side.t_padding-horizontal-xs-4
+                    | this is a object class
+                
+                
+            // card spa
+            div.o_page-l.t_padding-bottom-xs-4
+                div.o_page-l__body
+                    div(class="row  o_flex-grid")
+                        div(class="col-xs-12  o_flex-grid__col")
+                            | scoped spa .c_card
+                            
+                        div(class="col-xs-4  o_flex-grid__col")
+                            div(
+                                class="t_bgcolor-gray" 
+                                class-spa="c_card")
+                                h2 title
+                                p trump element is applied on this card, but does not block hover.
+                                
+                        div(class="col-xs-4  o_flex-grid__col")
+                            div(class-spa="c_card c_card--cold")
+                                h2 title
+                                p [class-spa~="c_card"]<br> [class-spa~="c_card--cold"]
+                        
+                        div(class="col-xs-4  o_flex-grid__col")
+                            div(class="c_purple-after" class-spa="c_card")
+                                h2 title
+                                p [class-spa~="c_card"]<br> <span class="c_purple-after">.c_purple-after</span>
+                
+                div.o_page-l__side.t_padding-horizontal-xs-4
+                    | this is a object class
