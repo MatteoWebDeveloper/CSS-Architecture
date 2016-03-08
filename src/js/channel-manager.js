@@ -14,7 +14,12 @@ module.exports = {
             instance = new ChannelFactory();
 
             ChannelListSingleton[channelName] = instance;
+
+            ChannelListSingleton[channelName]['count'] = 0
         }
+
+        // count listener
+        ChannelListSingleton[channelName]['count'] += ChannelListSingleton[channelName]['count'];
 
         // return channel reference
         return ChannelListSingleton[channelName];

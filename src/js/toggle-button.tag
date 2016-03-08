@@ -1,5 +1,5 @@
 <toggle-button>
-    <span class="btn btn-default btn-xs" onclick="{ toogle }">
+    <span class="btn btn-default btn-xs" onclick="{ toggle }">
         <span if={ toggleState } >show code</span>
         <span if={ !toggleState } >hide code</span>
     </span>
@@ -9,12 +9,14 @@
     </style>
 
     <script>
-        var ChannelManager = require('./channel-manager.js'),
+        var
+            self = this,
+            ChannelManager = require('./channel-manager.js'),
             channelInstance = ChannelManager.subscribe(opts.channel);
 
         this.toggleState = true;
 
-        this.toogle = function (e) {
+        this.toggle = function (e) {
             this.toggleState = !this.toggleState;
 
             channelInstance.trigger(
@@ -26,10 +28,16 @@
             );
         };
 
-        // init
-        //this.toogle();
-
         // events
+        channelInstance.on('INIT_MOUNT', function () {
+            // create a better system to wait every listener is ready
+            self.toggle();
+        });
+
+        this.on('mount', function(e){
+            channelInstance.trigger('INIT_MOUNT');
+        });
+
         this.on('unmount', function () {
             //channelInstance.off('*');
         });

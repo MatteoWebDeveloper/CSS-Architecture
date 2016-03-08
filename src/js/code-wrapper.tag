@@ -18,7 +18,7 @@
 
         this.Filters = Filters;
 
-        this.isCollapse = true;
+        this.isCollapse = null;
 
         // events
         channelInstance.on('TOGGLE_CHANGE', function(data) {
@@ -28,9 +28,10 @@
         });
 
         this.on('mount', function(e){
-            //
             var code = this.root.querySelector('pre code');
             htmlToText.init(code);
+
+            channelInstance.trigger('INIT_MOUNT');
         });
 
         this.on('unmount', function () {
