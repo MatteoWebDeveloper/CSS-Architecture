@@ -36,10 +36,6 @@
             }
         );
 
-        this.on('mount', function(e){
-            channelInstance.init();
-        });
-
         this.on('unmount', function () {
             //channelInstance.off('*');
         });

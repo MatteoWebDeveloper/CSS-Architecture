@@ -8,9 +8,26 @@
     </style>
 
     <script>
-        var ChannelManager = require('./channel-manager.js');
+        var ChannelManager = require('./channel-manager.js'),
+            channelInstance = ChannelManager.subscribe(opts.channel),
+            clipboard;
 
-        this.copy = function (e) {};
+        this.copy = function () {
+            channelInstance.trigger(
+                'COPY_ACTION',
+                {
+                    id: opts.id
+                }
+            );
+        };
+
+        this.on('mount', function () {
+            clipboard = new Clipboard(this.root, {
+                target: function(trigger) {
+                    return document.querySelectorAll('pre code')[0];
+                }
+            });
+        });
 
         this.on('unmount', function () {
             //channelInstance.off('*');

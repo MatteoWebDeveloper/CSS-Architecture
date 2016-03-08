@@ -14,7 +14,8 @@
             Filters = require('./filters.js'),
             HtmlToTextFactory = require('./html-to-text.js'),
             channelInstance = ChannelManager.subscribe(opts.channel),
-            htmlToText = new HtmlToTextFactory();
+            htmlToText = new HtmlToTextFactory(),
+            code;
 
         this.Filters = Filters;
 
@@ -27,11 +28,15 @@
             }
         });
 
-        this.on('mount', function(e){
-            var code = this.root.querySelector('pre code');
-            htmlToText.init(code);
+        // channelInstance.on('COPY_ACTION', function(data) {
+        //     if (opts.id == data.id) {
+        //
+        //     }
+        // });
 
-            channelInstance.init();
+        this.on('mount', function(e){
+            code = this.root.querySelector('pre code');
+            htmlToText.init(code);
         });
 
         this.on('unmount', function () {
