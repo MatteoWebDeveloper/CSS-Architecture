@@ -24,6 +24,7 @@
         this.on('mount', function () {
             clipboard = new Clipboard(this.root, {
                 target: function(trigger) {
+
                     return document.querySelectorAll('pre code')[0];
                 }
             });
