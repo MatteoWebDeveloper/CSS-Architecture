@@ -1,10 +1,4 @@
 <code-wrapper>
-    <div>
-        isCollapse:
-        { isCollapse }
-        { message }
-        { Filters.toString(isCollapse) }
-    </div>
     <div class={ t_collapse: isCollapse }>
         <yield/>
     </div>
@@ -24,14 +18,12 @@
 
         this.Filters = Filters;
 
-        this.isCollapse = false;
-
-        this.message = 'Hello, Riot!';
+        this.isCollapse = true;
 
         // events
         channelInstance.on('TOGGLE_CHANGE', function(data) {
             if (opts.id == data.id) {
-                //self.update({ isCollapse: data.status })
+                self.update({ isCollapse: data.status });
             }
         });
 
