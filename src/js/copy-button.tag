@@ -8,15 +8,12 @@
     </style>
 
     <script>
-        var ChannelManager = require('./event.js'),
-            channelInstance = ChannelManager.subscribe(opts.channel);
+        var ChannelManager = require('./channel-manager.js');
 
-        this.copy = function (e) {
-            console.log('event:copy-button',e, ciao);
+        this.copy = function (e) {};
 
-            channelInstance.prop = 1;
-
-            debugger;
-        };
+        this.on('unmount', function () {
+            //channelInstance.off('*');
+        });
     </script>
 </copy-button>

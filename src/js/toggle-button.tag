@@ -1,9 +1,7 @@
 <toggle-button>
-    <span class="btn btn-default btn-xs">
-        <span onclick="{ toogle }">
-            <span if={ toggleState } >show code</span>
-            <span if={ !toggleState } >hide code</span>
-        </span>
+    <span class="btn btn-default btn-xs" onclick="{ toogle }">
+        <span if={ toggleState } >show code</span>
+        <span if={ !toggleState } >hide code</span>
     </span>
 
     <style scoped>
@@ -11,7 +9,7 @@
     </style>
 
     <script>
-        var ChannelManager = require('./event.js'),
+        var ChannelManager = require('./channel-manager.js'),
             channelInstance = ChannelManager.subscribe(opts.channel);
 
         this.toggleState = true;
@@ -19,10 +17,21 @@
         this.toogle = function (e) {
             this.toggleState = !this.toggleState;
 
-            channelInstance.prop = 1;
-
-            console.log('event:toggle-button',e);
-            debugger;
+            channelInstance.trigger(
+                'TOGGLE_CHANGE',
+                {
+                    id: opts.id,
+                    status: this.toggleState,
+                }
+            );
         };
+
+        // init
+        //this.toogle();
+
+        // events
+        this.on('unmount', function () {
+            //channelInstance.off('*');
+        });
     </script>
 </toggle-button>
