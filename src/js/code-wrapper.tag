@@ -31,7 +31,7 @@
             var code = this.root.querySelector('pre code');
             htmlToText.init(code);
 
-            channelInstance.trigger('INIT_MOUNT');
+            channelInstance.init();
         });
 
         this.on('unmount', function () {

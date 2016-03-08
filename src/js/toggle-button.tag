@@ -29,13 +29,15 @@
         };
 
         // events
-        channelInstance.on('INIT_MOUNT', function () {
-            // create a better system to wait every listener is ready
-            self.toggle();
-        });
+        channelInstance.on( // create a better system to wait every listener is ready
+            'INIT',
+            function () {
+                self.toggle();
+            }
+        );
 
         this.on('mount', function(e){
-            channelInstance.trigger('INIT_MOUNT');
+            channelInstance.init();
         });
 
         this.on('unmount', function () {
