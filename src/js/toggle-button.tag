@@ -12,6 +12,7 @@
         var
             self = this,
             ChannelManager = require('./channel-manager.js'),
+            Events = require('./events.js'),
             channelInstance = ChannelManager.subscribe(opts.channel);
 
         this.toggleState = true;
@@ -20,7 +21,7 @@
             this.toggleState = !this.toggleState;
 
             channelInstance.trigger(
-                'TOGGLE_CHANGE',
+                Events.TOGGLE_CHANGE,
                 {
                     id: opts.id,
                     status: self.toggleState
@@ -29,6 +30,10 @@
         };
 
         // events
+        this.on('mount', function () {
+        
+        });
+
         this.on('unmount', function () {
             //channelInstance.off('*');
         });

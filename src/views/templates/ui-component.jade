@@ -14,18 +14,19 @@ div(class="row t_margin-bottom-xs-2")
             when 'deprecated': i(class="icon-cancel-circled t_color-danger") deprecated
 
     div(class="col-xs-6 text-right")
-        copy-button(class="t_inline-block t_margin-right-xs-2",id=uiTitle,channel="code-wrapper")
-        toggle-button(class="t_inline-block",id=uiTitle,channel="code-wrapper")
+        copy-button(class="t_inline-block t_margin-right-xs-2",id=uiTitle,channel="ui-library")
+        toggle-button(class="t_inline-block",id=uiTitle,channel="ui-library")
 
 
-div(class="panel panel-default t_padding-bottom-xs-0")      
+div(class="panel panel-default t_padding-bottom-xs-0")
     div(class="panel-body")
         // Demo and test
         block ui-demoTest
     
-    // Code  //@TODO this code https://clipboardjs.com/
-    code-wrapper(id=uiTitle,channel="code-wrapper")
+    // Code
+    code-wrapper(id=uiTitle,channel="ui-library")
         div(class="panel-footer t_padding-xs-0") 
-            pre(class="pre-scrollable pre--panel-footer t_padding-vertical-xs-3 t_padding-horizontal-xs-4 t_margin-xs-0")
-                code(class="language-xml t_padding-xs-0 t_margin-xs-0")
-                    block ui-showCode
+            code-example(id=uiTitle,channel="ui-library")
+                pre(class="pre-scrollable pre--panel-footer t_padding-vertical-xs-3 t_padding-horizontal-xs-4 t_margin-xs-0")
+                    code(class="language-xml t_padding-xs-0 t_margin-xs-0")
+                        block ui-showCode

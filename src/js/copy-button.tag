@@ -1,5 +1,5 @@
 <copy-button>
-    <span class="btn btn-default btn-xs" onclick="{ copy }">
+    <span class="btn btn-default btn-xs">
         copy code
     </span>
 
@@ -8,30 +8,27 @@
     </style>
 
     <script>
-        var ChannelManager = require('./channel-manager.js'),
+        var
+            self = this,
+            ChannelManager = require('./channel-manager.js'),
+            Events = require('./events.js'),
             channelInstance = ChannelManager.subscribe(opts.channel),
             clipboard;
 
-        this.copy = function () {
-            channelInstance.trigger(
-                'COPY_ACTION',
-                {
-                    id: opts.id
-                }
-            );
+        this.init = function (data) { // you need to wait the code to be ready
+            if (opts.id == data.id) {
+                clipboard = new Clipboard(self.root, {
+                    target: function(trigger) {
+                        return data.dom;
+                    }
+                });
+            }
         };
 
-        this.on('mount', function () {
-            clipboard = new Clipboard(this.root, {
-                target: function(trigger) {
-
-                    return document.querySelectorAll('pre code')[0];
-                }
-            });
-        });
-
-        this.on('unmount', function () {
-            //channelInstance.off('*');
-        });
+        // events
+        channelInstance.on(
+            Events.CODE_READY,
+            this.init
+        )
     </script>
 </copy-button>
