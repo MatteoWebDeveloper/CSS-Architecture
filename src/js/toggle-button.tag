@@ -23,19 +23,12 @@
                 'TOGGLE_CHANGE',
                 {
                     id: opts.id,
-                    status: this.toggleState,
+                    status: self.toggleState
                 }
             );
         };
 
         // events
-        channelInstance.on( // create a better system to wait every listener is ready
-            'INIT',
-            function () {
-                self.toggle();
-            }
-        );
-
         this.on('unmount', function () {
             //channelInstance.off('*');
         });

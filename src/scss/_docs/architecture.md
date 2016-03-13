@@ -136,9 +136,12 @@ $c_component__variable: 'value';   // public variable
 </body>
 ```
 
-## Resources:
+## Resources and inspirations:
 * [Docs CSS Guide line](http://cssguidelin.es/)
+* [ITCSS](https://speakerdeck.com/dafed/managing-css-projects-with-itcss)
+* [BEM](http://getbem.com/)
+* [ECSS](http://ecss.io/)
+* [Article BEM name spacing conventions](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
 * [Video Organizing CSS with OOCSS, SMACSS, and BEM](https://www.youtube.com/watch?v=IKFq2cSbQ4Q)
 * [Slides Organizing CSS with OOCSS, SMACSS, and BEM](https://speakerdeck.com/mattstauffer/organizing-css-oocss-smacss-and-bem)
-* [Article BEM name spacing conventions](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
-* [Slide ITCSS solve specificity problems](https://speakerdeck.com/dafed/managing-css-projects-with-itcss)
+
