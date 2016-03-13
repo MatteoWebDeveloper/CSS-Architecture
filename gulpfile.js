@@ -118,20 +118,24 @@ gulp.task('css', function()
         .pipe(livereload());
 });
 
+
 gulp.task('css-support', function() {
-    gulp.src(config.cssDistFiles, {
-        cwd: process.cwd()
-    })
-    .pipe(
-        postcss([
-            doiuse({
-                browsers: ['last 2 versions'],
-                onFeatureUsage: function(usageInfo) {
-                    console.log(usageInfo.message)
-                }
-            })
-        ])
-    );
+    return gulp.src(config.sassIndex)
+        .pipe(sass().on('error', sass.logError))
+        .pipe( // fontello anticache
+            gulpPreprocess(config.preprocess)
+        )
+        .pipe(gulp.dest(config.cssTemp))
+        .pipe(
+            postcss([
+                doiuse({
+                    browsers: ['ie >= 10', '> 1%', 'last 2 versions'],
+                    onFeatureUsage: function(usageInfo) {
+                        console.log(usageInfo.message)
+                    }
+                })
+            ])
+        );
 });
 
 
@@ -219,6 +223,20 @@ gulp.task('css-stylelint', function ()
 });
 
 
+gulp.task('css-reference', function()
+{
+    gulp.src( './node_modules/backstopjs/gulpfile.js' )
+        .pipe( chug({tasks:['reference']}) );
+});
+
+
+gulp.task('css-test', function()
+{
+    gulp.src( './node_modules/backstopjs/gulpfile.js' )
+        .pipe( chug({tasks:['test']}) );
+});
+
+
 gulp.task('jsVendor', function()
 {
     if (config.vendor.js.length == 0) {
@@ -249,20 +267,6 @@ gulp.task('js', function()
     // .pipe(
     //     gulpif(isSourceMap(),sourcemaps.write())
     // )
-});
-
-
-gulp.task('css-reference', function()
-{
-    gulp.src( './node_modules/backstopjs/gulpfile.js' )
-        .pipe( chug({tasks:['reference']}) );
-});
-
-
-gulp.task('css-test', function()
-{
-    gulp.src( './node_modules/backstopjs/gulpfile.js' )
-        .pipe( chug({tasks:['test']}) );
 });
 
 
