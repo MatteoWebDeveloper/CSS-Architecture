@@ -1,6 +1,4 @@
 <code-wrapper>
-    raw: { isOpen }<br>
-    filter:{ Filters(isOpen) }
     <div class={ t_collapse: !isOpen }>
         <yield/>
     </div>
