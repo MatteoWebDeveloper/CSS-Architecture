@@ -19,13 +19,11 @@
 * `gulp --sm`
 
 ## test
-this command create list of image reference
-> (node_modules/backstopjs/; gulp reference)
-
-this task is comparing your reference with the current UI
-> (node_modules/backstopjs/; gulp test)
+* `gulp css-reference`
+* `gulp css-test`
 
 ## TODO
 - test should be on the parent element
-- uCss https://github.com/oyvindeh/ucss
-- http://stylelint.io/user-guide/configuration/
+- [uCss](https://github.com/oyvindeh/ucss)
+- [stylelint](http://stylelint.io/user-guide/configuration/)
+- [postcss module](https://www.npmjs.com/package/postcss-modules)

@@ -234,14 +234,14 @@ gulp.task('js', function()
 });
 
 
-gulp.task('backstopjs-reference', function()
+gulp.task('css-reference', function()
 {
     gulp.src( './node_modules/backstopjs/gulpfile.js' )
         .pipe( chug({tasks:['reference']}) );
 });
 
 
-gulp.task('backstopjs-test', function()
+gulp.task('css-test', function()
 {
     gulp.src( './node_modules/backstopjs/gulpfile.js' )
         .pipe( chug({tasks:['test']}) );
