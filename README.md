@@ -8,17 +8,15 @@
 - [CSS Test](src/scss/_docs/test.md)
 - [CSS Tools](src/scss/_docs/tools.md)
 
-## install node packages
+## Setup
 `npm install`
-
-## install bower packages
 `bower install`
 
-## tasks:
+## Run server:
 * `gulp`
 * `gulp --sm`
 
-## test
+## Run test
 * `gulp css-reference`
 * `gulp css-test`
 
