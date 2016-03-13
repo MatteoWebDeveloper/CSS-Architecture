@@ -32,7 +32,7 @@
         );
 
         this.on('mount', function(e){
-
+            console.log('code-wrapper init',opts.id);
         });
 
         this.on('unmount', function () {

@@ -1,30 +1,30 @@
 block vars
 
-
 // UI title
-div(class="row t_margin-bottom-xs-2")
-    div(class="col-xs-6")
-        h3(class="t_inline-block t_margin-xs-0 t_margin-right-xs-2") 
-            | #{uiTitle}
-            
-        case codeStatus
-            when 'draft': i(class="icon-doc-text t_color-gray") draft 
-            when 'experimental': i(class="icon-attention t_color-warning") experimental
-            when 'standard': i(class="icon-ok-circled t_color-success") standard
-            when 'deprecated': i(class="icon-cancel-circled t_color-danger") deprecated
+component-wrapper(id=uiTitle,channel="ui-library")
+    div(class="row t_margin-bottom-xs-2")
+        div(class="col-xs-6")
+            h3(class="t_inline-block t_margin-xs-0 t_margin-right-xs-2") 
+                | #{uiTitle}
+                
+            case codeStatus
+                when 'draft': i(class="icon-doc-text t_color-gray") draft 
+                when 'experimental': i(class="icon-attention t_color-warning") experimental
+                when 'standard': i(class="icon-ok-circled t_color-success") standard
+                when 'deprecated': i(class="icon-cancel-circled t_color-danger") deprecated
 
-    div(class="col-xs-6 text-right")
-        copy-button(class="t_inline-block t_margin-right-xs-2",id=uiTitle,channel="ui-library")
-        toggle-button(class="t_inline-block",id=uiTitle,channel="ui-library")
+        div(class="col-xs-6 text-right")
+            copy-button(class="t_inline-block t_margin-right-xs-2",id=uiTitle,channel="ui-library")
+            toggle-button(class="t_inline-block",id=uiTitle,channel="ui-library")
 
 
-div(class="panel panel-default t_padding-bottom-xs-0")
-    div(class="panel-body")
-        // Demo and test
-        block ui-demoTest
-    
-    // Code
-    code-wrapper(id=uiTitle,channel="ui-library")
+    div(class="panel panel-default t_padding-bottom-xs-0")
+        div(class="panel-body")
+            // Demo and test
+            block ui-demoTest
+        
+        // Code
+        code-wrapper(id=uiTitle,channel="ui-library")
         div(class="panel-footer t_padding-xs-0") 
             code-example(id=uiTitle,channel="ui-library")
                 pre(class="pre-scrollable pre--panel-footer t_padding-vertical-xs-3 t_padding-horizontal-xs-4 t_margin-xs-0")

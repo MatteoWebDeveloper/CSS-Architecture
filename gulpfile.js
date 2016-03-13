@@ -7,7 +7,7 @@ var gulp            = require('gulp');
 var gutil           = require('gulp-util');
 var gulpif          = require('gulp-if');
 var clean           = require('gulp-clean');
-var chug            = require( 'gulp-chug' );
+var chug            = require('gulp-chug');
 var gulpPreprocess  = require('gulp-preprocess');
 var check           = require('gulp-check');
 var runSequence     = require('run-sequence');
@@ -18,12 +18,14 @@ var sourcemaps      = require('gulp-sourcemaps');
 var htmlmin         = require('gulp-htmlmin');
 var jade            = require('gulp-jade');
 var sass            = require('gulp-sass');
+var postcss         = require('gulp-postcss');
 var autoprefixer    = require('gulp-autoprefixer');
 var cssnano         = require('gulp-cssnano');
 var combineMq       = require('gulp-combine-mq');
 var csslint         = require('gulp-csslint');
 var stylelint       = require('gulp-stylelint').default;
 var stylelintLog    = require('gulp-stylelint-console-reporter').default;
+var doiuse          = require('doiuse');
 var symdiff         = require('gulp-symdiff');
 var symdiffHtml     = require('symdiff-html');
 var symdiffCss      = require('symdiff-css');
@@ -114,6 +116,22 @@ gulp.task('css', function()
         )
         .pipe(gulp.dest(config.cssDist))
         .pipe(livereload());
+});
+
+gulp.task('css-support', function() {
+    gulp.src(config.cssDistFiles, {
+        cwd: process.cwd()
+    })
+    .pipe(
+        postcss([
+            doiuse({
+                browsers: ['last 2 versions'],
+                onFeatureUsage: function(usageInfo) {
+                    console.log(usageInfo.message)
+                }
+            })
+        ])
+    );
 });
 
 

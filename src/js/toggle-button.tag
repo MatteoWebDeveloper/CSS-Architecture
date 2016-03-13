@@ -30,8 +30,8 @@
         };
 
         // events
-        this.on('mount', function () {
-        
+        this.on('mount', function(e){
+            console.log('toogle-button init',opts.id);
         });
 
         this.on('unmount', function () {
