@@ -22,6 +22,6 @@
 
 ## TODO
 - test should be on the parent element
+- [postcss module](https://www.npmjs.com/package/postcss-modules)
 - [uCss](https://github.com/oyvindeh/ucss)
 - [stylelint](http://stylelint.io/user-guide/configuration/)
-- [postcss module](https://www.npmjs.com/package/postcss-modules)

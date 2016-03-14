@@ -21,12 +21,29 @@
 
         this.isOpen = isOpenBool;
 
+        this.message = 'Loading...';
+        this.stateChange = function (tag) {
+          self.message = tag + ' ready.'
+          self.update()
+        }
+
+        this.init = function (data) {
+            if (opts.id == data.id) {
+                self.isOpen = data.status;
+                self.update();
+            }
+        };
+
         // events
+        myApp.on('mounted', this.stateChange);
+        myApp.on('init', this.init);
+
         channelInstance.on(
             Events.TOGGLE_CHANGE,
             function(data) {
                 if (opts.id == data.id) {
-                    self.update({ isOpen: data.status });
+                    self.isOpen = data.status;
+                    self.update();
                 }
             }
         );

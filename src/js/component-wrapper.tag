@@ -9,6 +9,8 @@
             channelInstance = ChannelManager.subscribe(opts.channel)
         ;
 
+        myApp = this;
+
         // events
         this.on('mount', function(e){
             console.log('component-wrapper init',opts.id);
