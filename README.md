@@ -21,6 +21,7 @@
 * `gulp css-test`
 
 ## TODO
+- problem at scale sharable component and themable component
 - test should be on the parent element
 - [postcss module](https://www.npmjs.com/package/postcss-modules)
 - [uCss](https://github.com/oyvindeh/ucss)

@@ -17,6 +17,7 @@ var livereload      = require('gulp-livereload');
 var sourcemaps      = require('gulp-sourcemaps');
 var htmlmin         = require('gulp-htmlmin');
 var jade            = require('gulp-jade');
+
 var sass            = require('gulp-sass');
 var postcss         = require('gulp-postcss');
 var autoprefixer    = require('gulp-autoprefixer');
@@ -29,6 +30,8 @@ var doiuse          = require('doiuse');
 var symdiff         = require('gulp-symdiff');
 var symdiffHtml     = require('symdiff-html');
 var symdiffCss      = require('symdiff-css');
+var cssGuide        = require('mdcss');
+
 var concat          = require('gulp-concat');
 var browserify      = require('browserify');
 var riot            = require('riot');
@@ -104,6 +107,17 @@ gulp.task('css', function()
         .pipe(sass().on('error', sass.logError))
         .pipe( // fontello anticache
             gulpPreprocess(config.preprocess)
+        )
+        .pipe(gulp.dest(config.cssDist))
+        .pipe(
+            postcss([
+                cssGuide({
+                    destination: 'dist/styleguide/',
+                    examples: {
+                        css: ['/css/vendor.css','/css/main.css']
+                    }
+                })
+            ])
         )
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],

@@ -51,6 +51,7 @@
     "gulp-util": "^3.0.7",
     "jshint": "^2.8.0",
     "lodash": "^4.5.0",
+    "mdcss": "^1.5.1",
     "minimist": "^1.2.0",
     "phantomjs": "^1.9.8",
     "postcss": "^5.0.19",
