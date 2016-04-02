@@ -1,3 +1,23 @@
+/*---
+title:   Layout
+section: Object
+
+description:
+
+```example:html
+<div style="position:relative;height:200px;width:200px;background-color:blue;">
+
+    <div class="o_corner-top-left" style="height:50px;width:50px;background-color:red;">1</div>
+
+    <div class="o_corner-top-right" style="height:50px;width:50px;background-color:red;">2</div>
+
+    <div class="o_corner-bottom-left" style="height:50px;width:50px;background-color:red;">3</div>
+
+    <div class="o_corner-bottom-right" style="height:50px;width:50px;background-color:red;">4</div>
+
+</div>
+```
+*/
 .o_corner-top-left
 {
     position: absolute;

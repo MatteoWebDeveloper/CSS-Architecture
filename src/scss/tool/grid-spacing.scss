@@ -11,11 +11,33 @@
     @each $colSize in $listColumnSizes {
         $colIndex: index($listColumnSizes, $colSize) - 1;
 
-        // output .namespace-xs-0
-        &-#{$media-name}-#{$colIndex} {
-        @each $propName in $properties {
-            #{$propName}: $colSize !important;
+        //@debug(&,type_of($colSize),$colSize,$media-name);
+
+        // if the value is not a number or map do not generate anything
+
+        // number
+        @if type_of($colSize) == number  { // check if the value is a disabled property
+            $colIndex: index($listColumnSizes, $colSize) - 1;
+
+            // output .namespace-xs-0
+            &-#{$media-name}-#{$colIndex} {
+            @each $propName in $properties {
+                #{$propName}: $colSize !important;
+            }
+            }
         }
+
+        // map
+        @if type_of($colSize) == map { // special grid value
+            $colName:  map-get($colSize, 'sel');
+            $colValue: map-get($colSize, 'val');
+
+            // output .namespace-xs-full
+            &-#{$media-name}-#{$colName} {
+            @each $propName in $properties {
+                #{$propName}: $colValue !important;
+            }
+            }
         }
 
     }

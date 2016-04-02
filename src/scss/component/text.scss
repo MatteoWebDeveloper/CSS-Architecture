@@ -25,7 +25,8 @@
 /* @end text-utilities */
 
 
-/* @group text-header */
+/* @group text */
+
 /*---
 title:   text header
 section: Component
@@ -33,19 +34,36 @@ section: Component
 Text header description mark down:
 
 ```example:html
-<span class="c_text-header">text header</span>
+<div><span class="c_text-header">text header</span></div>
+<div><span class="c_text-header c_text-header--primary">text header</span></div>
+<div><span class="c_text-header c_text-header--1">text header</span></div>
+<div><span class="c_text-header c_text-header--2">text header</span></div>
 ```
 */
 .c_text-header {
     font-size: 16px;
     font-family: 'Indie Flower', cursive;
 
-	&--primary {
+    // semantic
+    &--primary {
+        color: $theme__color-primary;
+    }
 
+    // not semantic
+	&--1 {
+        color: $theme__color-primary;
+        font-size: 24px;
+        line-height: 1.4;
 	}
 
-	&--secondary {
+	&--2 {
+        color: $theme__color-secondary;
+        font-size: 26px;
+        transition: color .5s linear;
 
+        &:hover {
+            color: $theme__color-primary;
+        }
 	}
 }
 /* @end text-header */
