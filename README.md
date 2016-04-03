@@ -20,6 +20,16 @@
 * `gulp css-reference`
 * `gulp css-test`
 
+## List features
+- sass
+- postcss
+- stylelint (linting)
+- doiuse (check support)
+- symdiff (check unused classes)
+- css style guide (use comment inside css)
+- css deprecation tool (class deprecated)
+- css backstopjs (visual regression tool)
+
 ## TODO
 - problem at scale sharable component and themable component
 - test should be on the parent element
