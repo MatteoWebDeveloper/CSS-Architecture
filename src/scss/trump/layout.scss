@@ -6,9 +6,8 @@
 // * display
 
 // config
-$t_layout__width-height_grid: 0, 5px, 15px, 30px, 60px, 90px, 120px, 150px, 180px, 210px;
+$t_layout__width-height_grid: 0, 5px, 15px, 30px, 60px, 90px, 120px, 150px, 180px, 210px, (sel:'full',val: 100%);
 $t_layout__padding-margin_grid: 0, 2px, 5px, 10px, 15px, 20px, 25px, 30px, 45px, 60px, 75px, 90px;
-$t_layout__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20px, 22px, 24px, 26px, 30px, 40px, 50px, 60px, 120px;
 
 /* group width and height */
 .t_width {
@@ -95,13 +94,6 @@ $t_layout__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20p
 }
 /* end margin */
 
-/* group text-size */
-.t_text-size {
-    $property: 'font-size';
-    @include grid-spacing($property,$t_layout__font-size_grid)
-}
-/* end text-size */
-
 /* group display */
 .t_flex {
     display: flex !important;
@@ -136,4 +128,12 @@ $t_layout__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20p
 .t_relative {
     position: relative;
 }
+/* group position */
+.t_absolute {
+    position: absolute;
+}
 /* end position */
+
+.t_full-width {
+    width: 100%
+}

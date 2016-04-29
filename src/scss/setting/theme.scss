@@ -1,18 +1,30 @@
 
 // colors
-$theme__color-base: black;
-$theme__color-primary: orange;
+$theme__color-base:      black;
+$theme__color-primary:   orange;
 $theme__color-secondary: yellow;
 
-$theme__color-gray: gray;
+$theme__color-gray:      gray;
+$theme__color-white:     white;
+$theme__color-red:       #E21717;
+$theme__color-magenta:   #e3147d;
 
-$theme__color-red: #E21717;
+$theme__color-magenta:   #e3147d;
+
+$theme__color-shadow:        rgba(0, 0, 0, .2);
+$theme__color-shadow-active: rgba(0, 0, 0, .5);
+
+$theme__trasparency-0: 0;
+$theme__trasparency-2: 0.2;
+$theme__trasparency-5: 0.5;
+$theme__trasparency-8: 0.8;
+$theme__trasparency-8: 1;
 
 // media query
 $theme__media-mobile-min: 0;
 $theme__media-tablet-min: 768px;
 $theme__media-desktop-min: 1025px;
-$theme__media-mobile-max: $theme__media-tablet-min - 1; // calcolated
+$theme__media-mobile-max: $theme__media-tablet-min - 1; // calculated
 $theme__media-tablet-max: $theme__media-desktop-min - 1;
 
 // gradual media query

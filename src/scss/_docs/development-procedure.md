@@ -12,7 +12,7 @@ The best place for doing that is inside a section file:
 ```html
 <div class="panel text-center sans-serif color-red  s_homepage-card  t_text-bold"></div> // use section classes to prototype quickly
 ```
-location classes are in general a bad practice for this reason are just a temporary place to develop and evolve your code. Once you see a pattern in your code you can extract that part and move it to a more consolidate category (base, object, component, trump, ...).
+Location base class are in general a bad practice but are convenient when you need to prototype something quickly. The important thing is keep your classes in that location. Once you see a pattern in your code you can extract that part and move it to a more consolidate category (base, object, component, trump, ...).
 
 ## 2) Reuse trump and vendor classes
 Another set of classes that help with the development are trump and bootstrap utilities classes. Are classes with a small amount of proprieties and create loose dependencies. This make the component easier to compose and transform.
@@ -59,3 +59,20 @@ for instance if you have the following composition:
 ```
 Bootstrap class is overwritten by the component,
 the component class is overwritten by the trump class.
+
+##### Composition class segmentation and combination good practice
+'{1}' = just one component type
+'{+}'  = more than 1 component type
+```html
+<div class="generic{+}  trump{+}"></div>               // for instance bootstrap classes
+
+<div class="base{?}"></div>                            // usually reset
+
+<div class="object{1}  trump{+}"></div>                // usually you do not need trump on object
+
+<div class="object{1}  component{1}  trump{+}"></div>  // usually object wrap other component
+
+<div class="object{1}  section{1}  trump{+}"></div>    // section is similar to component is better keep them separated
+
+<div class="trump{+}"></div>                           // just utility
+```

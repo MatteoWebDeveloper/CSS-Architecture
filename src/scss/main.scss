@@ -35,15 +35,18 @@
 
 /* @group Object */
 @import 'object/layout';
+@import 'object/position';
 /* @end Object */
 
 
 /* @group Component */
+@import 'component/card';
 @import 'component/text';
 /* @end Component */
 
 
 /* @group Section */
+@import 'section/prototype';
 @import 'section/specificity';
 /* @end Section */
 

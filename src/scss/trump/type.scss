@@ -1,3 +1,5 @@
+$t_type__font-size_grid: 0, 5px, 10px, 11px, 12px, 13px, 14px, 16px, 18px, 20px, 22px, 24px, 26px, 30px, 40px, 50px, 60px, 120px;
+
 .t_text-bold { font-weight: bold !important; }
 .t_text-italic { font-style: italic !important; }
 
@@ -8,7 +10,7 @@
     text-transform: lowercase !important;
 
     &:first-letter {
-        text-transform: uppercase- !important;
+        text-transform: uppercase !important;
     }
 }
 
@@ -21,6 +23,18 @@
 .t_color-danger { color: $brand-danger; }
 
 .t_color-red { color: $theme__color-red; }
+.t_color-magenta { color: $theme__color-magenta; }
 
 .t_bgcolor-gray-base { background-color: $gray-base; }
 .t_bgcolor-gray { background-color: $gray; }
+
+/* group text-size */
+.t_text-size {
+    $property: 'font-size';
+    @include grid-spacing($property,$t_type__font-size_grid)
+}
+/* end text-size */
+
+.t_cursor-pointer {
+    cursor: pointer;
+}
