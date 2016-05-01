@@ -117,14 +117,14 @@ $c_component__variable: 'value';   // public variable
         <div class="o_grid__col"> <!-- object class -->
 
             <div class="o_grid__cell">
-                <div class="l_side-body__side">
+                <div class="o_layout-side-body__side">
 
                     <div class="c_sidebar  c_sidebar--dark"> <!-- component class -->
                         sidebar content
                     </div>
 
                 </div>
-                <div class="l_side-body__body">
+                <div class="o_layout-side-body__body">
                     <p class="t_text-bold">Body content</p> <!-- trump class-->
                 </div>
             </div>
@@ -144,4 +144,3 @@ $c_component__variable: 'value';   // public variable
 * [Article BEM name spacing conventions](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
 * [Video Organizing CSS with OOCSS, SMACSS, and BEM](https://www.youtube.com/watch?v=IKFq2cSbQ4Q)
 * [Slides Organizing CSS with OOCSS, SMACSS, and BEM](https://speakerdeck.com/mattstauffer/organizing-css-oocss-smacss-and-bem)
-
