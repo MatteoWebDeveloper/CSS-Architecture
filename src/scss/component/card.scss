@@ -1,0 +1,22 @@
+.c_card {
+    box-shadow: 0px 2px 3px 1px $theme__color-shadow;
+    overflow: hidden;
+
+    &__cont-edge {
+        position: absolute;
+        width: 100%;
+        top:0;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    &__cont {
+        position: relative;
+        background-color: $theme__color-white;
+        padding:15px 40px;
+        transition: transform .2s ease-out;
+    }
+    &:hover &__cont {
+        transform: translateY(-50px);
+    }
+}
